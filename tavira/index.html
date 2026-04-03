@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aulas de Salsa em Tavira – Academia de Salsa do Algarve. Ginásio Clube de Tavira, Terças 18:00. Inscreve-te já!">
+<meta name="keywords" content="salsa tavira, aulas de dança tavira, academia salsa algarve, kizomba tavira">
+<meta property="og:title" content="Aulas de Salsa em Tavira · Academia de Salsa do Algarve">
+<meta property="og:description" content="Começa a dançar em Tavira. Terças às 18:00 no Ginásio Clube de Tavira. Inscrições abertas!">
+<title>Aulas de Salsa em Tavira · Academia de Salsa do Algarve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════ RESET & VARIABLES ═══════ */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --black:   #0A0806;
+  --dark:    #1A1510;
+  --card:    #221D16;
+  --red:     #C0392B;
+  --red2:    #922B21;
+  --gold:    #D4A843;
+  --gold-l:  #F0C96A;
+  --gold-d:  rgba(212,168,67,0.15);
+  --cream:   #F5EFE6;
+  --text:    #C4B89E;
+  --muted:   #6B6050;
+  --green:   #25D366;
+}
+html { scroll-behavior: smooth; font-size:16px; }
+body {
+  background: var(--black);
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { color:inherit; text-decoration:none; }
+img { max-width:100%; display:block; }
+
+/* ═══════ LANG SYSTEM ═══════ */
+[data-lang="en"] .pt { display:none!important; }
+[data-lang="pt"] .en { display:none!important; }
+
+/* ═══════ LANG TOGGLE ═══════ */
+.lang-bar {
+  position: fixed; top:0; left:0; right:0; z-index:300;
+  background: rgba(10,8,6,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(212,168,67,0.1);
+  display: flex; align-items:center; justify-content:space-between;
+  padding: 0.65rem 1.5rem;
+}
+.lang-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem; letter-spacing:0.08em;
+  color: var(--gold);
+}
+.lang-logo span { color:var(--cream); }
+.lang-flags { display:flex; gap:0.4rem; align-items:center; }
+.flag-btn {
+  display:flex; align-items:center; gap:0.35rem;
+  padding:0.3rem 0.7rem; border-radius:3px; cursor:pointer;
+  font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase;
+  border:1px solid transparent; transition:all 0.2s;
+  font-family:'DM Sans',sans-serif; background:none; color:var(--muted);
+}
+.flag-btn.active { border-color:var(--gold); color:var(--gold); background:rgba(212,168,67,0.08); }
+.flag-btn:hover:not(.active) { color:var(--text); border-color:var(--muted); }
+
+/* ═══════ HERO ═══════ */
+.hero {
+  min-height: 100vh;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center;
+  padding: 6rem 1.5rem 4rem;
+  position:relative; overflow:hidden;
+}
+.hero-bg {
+  position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 30%, rgba(192,57,43,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(212,168,67,0.07) 0%, transparent 50%),
+    linear-gradient(160deg, #0A0806 0%, #140F0A 50%, #0A0806 100%);
+}
+.hero-pattern {
+  position:absolute; inset:0; opacity:0.025;
+  background-image: repeating-linear-gradient(
+    45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%
+  );
+  background-size: 28px 28px;
+}
+.hero-content { position:relative; z-index:2; max-width:720px; margin:0 auto; }
+
+/* Logo */
+.logo-wrap {
+  display:flex; align-items:center; justify-content:center;
+  gap:0.8rem; margin-bottom:2rem;
+  animation: fadeUp 0.8s ease both;
+}
+.logo-icon {
+  width:64px; height:64px; border-radius:50%;
+  background:linear-gradient(135deg, var(--red2), var(--red));
+  display:flex; align-items:center; justify-content:center;
+  font-size:2rem; border:2px solid rgba(212,168,67,0.3);
+  flex-shrink:0;
+}
+.logo-text { text-align:left; }
+.logo-name {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.15rem; letter-spacing:0.06em; color:var(--gold); line-height:1.1;
+}
+.logo-sub {
+  font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--muted); margin-top:0.15rem;
+}
+
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:0.5rem;
+  background:rgba(212,168,67,0.08); border:1px solid rgba(212,168,67,0.2);
+  color:var(--gold); font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase;
+  padding:0.3rem 1rem; border-radius:20px; margin-bottom:1.5rem;
+  animation: fadeUp 0.8s 0.1s ease both;
+}
+.hero h1 {
+  font-family:'Bebas Neue',sans-serif;
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  line-height:0.93; letter-spacing:0.02em;
+  color:var(--cream); margin-bottom:0.5rem;
+  animation: fadeUp 0.8s 0.15s ease both;
+}
+.hero h1 em { color:var(--red); font-style:normal; }
+.hero-subtitle {
+  font-family:'Lora',serif; font-style:italic;
+  font-size:clamp(1.1rem,3vw,1.5rem);
+  color:var(--gold); margin-bottom:1.5rem;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+.hero-desc {
+  font-size:1rem; line-height:1.7; color:var(--text);
+  max-width:560px; margin:0 auto 2.5rem;
+  animation: fadeUp 0.8s 0.25s ease both;
+}
+.hero-actions {
+  display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;
+  animation: fadeUp 0.8s 0.3s ease both;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(24px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ═══════ BUTTONS ═══════ */
+.btn {
+  display:inline-flex; align-items:center; gap:0.5rem;
+  padding:0.9rem 1.8rem; border-radius:2px;
+  font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase;
+  transition:all 0.22s; white-space:nowrap; cursor:pointer; border:none;
+  font-family:'DM Sans',sans-serif;
+}
+.btn-red { background:var(--red); color:#fff; }
+.btn-red:hover { background:var(--red2); transform:translateY(-2px); box-shadow:0 8px 24px rgba(192,57,43,0.3); }
+.btn-gold { background:var(--gold); color:var(--black); }
+.btn-gold:hover { background:var(--gold-l); transform:translateY(-2px); }
+.btn-outline { border:1px solid var(--muted); color:var(--text); background:none; }
+.btn-outline:hover { border-color:var(--gold); color:var(--gold); }
+.btn-whatsapp { background:var(--green); color:#fff; }
+.btn-whatsapp:hover { background:#1ebe5a; transform:translateY(-2px); box-shadow:0 8px 24px rgba(37,211,102,0.3); }
+
+/* ═══════ SECTIONS ═══════ */
+.section { padding:5rem 1.5rem; }
+.section-dark { background:var(--dark); }
+.section-card { background:var(--card); }
+.container { max-width:900px; margin:0 auto; }
+
+.eyebrow {
+  font-size:0.68rem; letter-spacing:0.25em; text-transform:uppercase;
+  color:var(--gold); display:flex; align-items:center; gap:0.6rem;
+  margin-bottom:0.8rem;
+}
+.eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--gold); }
+
+h2.sh {
+  font-family:'Lora',serif; font-size:clamp(1.6rem,4vw,2.4rem); font-weight:600;
+  color:var(--cream); line-height:1.15; margin-bottom:0.75rem;
+}
+h2.sh em { font-style:italic; color:var(--gold); }
+.body-text { font-size:0.95rem; line-height:1.75; color:var(--text); }
+
+/* ═══════ SCHEDULE CARD ═══════ */
+.schedule-wrap { margin-top:2.5rem; }
+.schedule-card {
+  background:var(--card); border-radius:4px; overflow:hidden;
+  border:1px solid rgba(212,168,67,0.12);
+}
+.schedule-header {
+  background:linear-gradient(135deg, var(--red2), #7B241C);
+  padding:1.5rem 2rem; display:flex; align-items:center; gap:1.25rem;
+  position:relative; overflow:hidden;
+}
+.schedule-header::after {
+  content:''; position:absolute; inset:0;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,0.03) 0,rgba(255,255,255,0.03) 1px,transparent 0,transparent 50%);
+  background-size:18px 18px; pointer-events:none;
+}
+.schedule-loc-icon { font-size:1.8rem; flex-shrink:0; }
+.schedule-loc-name {
+  font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:0.06em; color:#fff;
+}
+.schedule-loc-addr { font-size:0.78rem; color:rgba(255,255,255,0.65); margin-top:0.15rem; }
+.schedule-loc-addr a { color:rgba(255,255,255,0.75); text-decoration:underline; text-underline-offset:2px; }
+.schedule-loc-addr a:hover { color:#fff; }
+
+.schedule-table { width:100%; border-collapse:collapse; }
+.schedule-table th {
+  font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--muted); padding:0.75rem 1.5rem; text-align:left;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  font-weight:400;
+}
+.schedule-table td {
+  padding:1rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.03);
+  font-size:0.9rem; color:var(--text); transition:background 0.2s;
+}
+.schedule-table tr:last-child td { border-bottom:none; }
+.schedule-table tr:hover td { background:rgba(212,168,67,0.03); }
+.schedule-table td.day {
+  font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold);
+  font-weight:500;
+}
+.schedule-table td.time {
+  font-family:'Lora',serif; font-size:1.1rem; color:var(--cream);
+}
+.dance-badge {
+  display:inline-flex; align-items:center; gap:0.35rem;
+  padding:0.25rem 0.75rem; border-radius:20px;
+  font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:500;
+}
+.db-salsa   { background:rgba(192,57,43,0.15); color:#E8776C; }
+.db-bachata { background:rgba(212,168,67,0.12); color:var(--gold); }
+.db-kizomba { background:rgba(155,89,182,0.12); color:#C080E0; }
+
+.schedule-note {
+  padding:1rem 1.5rem; background:rgba(212,168,67,0.04);
+  border-top:1px solid rgba(212,168,67,0.08);
+  font-size:0.82rem; color:var(--muted); line-height:1.5;
+  display:flex; align-items:flex-start; gap:0.5rem;
+}
+
+/* ═══════ PROMOTIONS ═══════ */
+.promos-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2.5rem;
+}
+.promo-card {
+  background:var(--card); border-radius:4px; padding:1.75rem;
+  border:1px solid rgba(212,168,67,0.12);
+  text-align:center; transition:border-color 0.25s, transform 0.25s;
+}
+.promo-card:hover { border-color:rgba(212,168,67,0.35); transform:translateY(-3px); }
+.promo-icon { font-size:2.2rem; margin-bottom:0.75rem; }
+.promo-title {
+  font-family:'Lora',serif; font-size:1rem; font-weight:600;
+  color:var(--cream); margin-bottom:0.4rem;
+}
+.promo-desc { font-size:0.82rem; color:var(--text); line-height:1.55; }
+.promo-tag {
+  display:inline-block; margin-top:0.75rem;
+  background:rgba(192,57,43,0.15); color:var(--red);
+  font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase;
+  padding:0.2rem 0.65rem; border-radius:20px; font-weight:500;
+}
+
+/* ═══════ PRICING ═══════ */
+.pricing-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2.5rem;
+}
+.price-card {
+  background:var(--card); border-radius:4px; padding:1.75rem;
+  border:1px solid rgba(255,255,255,0.05);
+  text-align:center; transition:border-color 0.25s, transform 0.25s;
+  position:relative;
+}
+.price-card:hover { border-color:rgba(212,168,67,0.3); transform:translateY(-3px); }
+.price-card.featured {
+  border-color:var(--gold);
+}
+.price-card.featured::before {
+  content: attr(data-label);
+  position:absolute; top:0; left:0; right:0;
+  background:var(--gold); color:var(--black);
+  font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase;
+  padding:0.28rem; font-weight:500; text-align:center;
+  font-family:'DM Sans',sans-serif;
+}
+.price-card.featured { padding-top:2.2rem; }
+.price-label { font-size:0.75rem; color:var(--text); letter-spacing:0.05em; margin-bottom:0.5rem; }
+.price-amount {
+  font-family:'Bebas Neue',sans-serif; font-size:3.2rem;
+  color:var(--cream); line-height:1;
+}
+.price-amount sup { font-size:1.4rem; color:var(--muted); }
+.price-per { font-size:0.68rem; color:var(--muted); letter-spacing:0.1em; margin-top:0.2rem; }
+.price-divider { height:1px; background:rgba(255,255,255,0.05); margin:1.2rem 0; }
+.price-features { list-style:none; display:flex; flex-direction:column; gap:0.35rem; }
+.price-features li {
+  display:flex; align-items:center; gap:0.5rem;
+  font-size:0.82rem; color:var(--text);
+}
+.price-features li::before { content:'✓'; color:var(--gold); font-weight:600; flex-shrink:0; }
+.price-cta { margin-top:1.25rem; display:block; }
+
+/* Particulares */
+.part-box {
+  background:var(--card); border-radius:4px; padding:2rem;
+  border:1px solid rgba(212,168,67,0.15);
+  display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center;
+  margin-top:2.5rem;
+}
+.part-info .subtitle {
+  font-family:'Lora',serif; font-style:italic; font-size:1rem;
+  color:var(--gold); margin-bottom:0.75rem;
+}
+.part-reasons { list-style:none; display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem; }
+.part-reasons li {
+  display:flex; align-items:flex-start; gap:0.6rem;
+  font-size:0.85rem; color:var(--text); line-height:1.5;
+}
+.part-reasons li span { color:var(--gold); font-size:0.9rem; flex-shrink:0; margin-top:0.05rem; }
+.part-price-box { text-align:center; }
+.part-price-box .amount {
+  font-family:'Bebas Neue',sans-serif; font-size:2.5rem; color:var(--gold); line-height:1;
+}
+.part-price-box .pl { font-size:0.72rem; color:var(--muted); letter-spacing:0.1em; margin-top:0.2rem; }
+.part-price-box .note { font-size:0.78rem; color:var(--text); margin-top:0.5rem; line-height:1.5; }
+
+/* ═══════ MAP ═══════ */
+.map-box {
+  background:var(--card); border-radius:4px; overflow:hidden;
+  border:1px solid rgba(212,168,67,0.12); margin-top:2.5rem;
+  display:grid; grid-template-columns:1fr 1.2fr; min-height:220px;
+}
+.map-info { padding:2rem; display:flex; flex-direction:column; justify-content:center; gap:1rem; }
+.map-detail { display:flex; gap:0.75rem; align-items:flex-start; font-size:0.88rem; color:var(--text); }
+.map-detail .mi { font-size:1.2rem; flex-shrink:0; }
+.map-embed { position:relative; min-height:220px; background:var(--card); }
+.map-embed iframe { width:100%; height:100%; border:0; filter:grayscale(40%) brightness(0.8); min-height:220px; display:block; }
+
+/* ═══════ FORM ═══════ */
+.form-wrap {
+  background:var(--card); border-radius:4px;
+  border:1px solid rgba(212,168,67,0.12);
+  overflow:hidden; margin-top:2.5rem;
+}
+.form-header {
+  background:linear-gradient(135deg, var(--red2), #7B241C);
+  padding:1.5rem 2rem; position:relative; overflow:hidden;
+}
+.form-header::after {
+  content:''; position:absolute; inset:0;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,0.03) 0,rgba(255,255,255,0.03) 1px,transparent 0,transparent 50%);
+  background-size:18px 18px; pointer-events:none;
+}
+.form-header h3 {
+  font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:0.06em;
+  color:#fff; position:relative; z-index:1;
+}
+.form-header p { font-size:0.85rem; color:rgba(255,255,255,0.7); margin-top:0.3rem; position:relative; z-index:1; }
+.form-body { padding:2rem; }
+.form-inner { width:100%; overflow:hidden; border-radius:3px; }
+.form-inner iframe { width:100%; border:0; display:block; }
+
+/* ═══════ CTA BANNER ═══════ */
+.cta-banner {
+  background:linear-gradient(135deg, var(--red2) 0%, #7B241C 100%);
+  padding:4.5rem 1.5rem; text-align:center; position:relative; overflow:hidden;
+}
+.cta-banner::before {
+  content:''; position:absolute; inset:0;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,0.025) 0,rgba(255,255,255,0.025) 1px,transparent 0,transparent 50%);
+  background-size:20px 20px;
+}
+.cta-banner > * { position:relative; z-index:1; }
+.cta-banner h2 {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2.2rem,6vw,3.5rem); letter-spacing:0.04em; color:#fff; margin-bottom:0.5rem;
+}
+.cta-banner p { font-size:1rem; color:rgba(255,255,255,0.75); margin-bottom:2rem; max-width:500px; margin-left:auto; margin-right:auto; }
+.cta-actions { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
+
+/* ═══════ SOCIAL PROOF ═══════ */
+.testi-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:2.5rem; }
+.testi-card {
+  background:var(--card); border-radius:4px; padding:1.75rem;
+  border-top:2px solid var(--gold);
+}
+.testi-stars { color:var(--gold); font-size:0.85rem; margin-bottom:0.75rem; }
+.testi-q {
+  font-family:'Lora',serif; font-style:italic;
+  font-size:0.93rem; color:var(--text); line-height:1.65; margin-bottom:1.2rem;
+}
+.testi-author { display:flex; align-items:center; gap:0.65rem; }
+.testi-av {
+  width:34px; height:34px; border-radius:50%;
+  background:linear-gradient(135deg,var(--red),var(--gold));
+  display:flex; align-items:center; justify-content:center;
+  font-size:0.85rem; font-weight:600; color:#fff; font-family:'Lora',serif;
+  flex-shrink:0;
+}
+.testi-name { font-size:0.82rem; font-weight:500; color:var(--cream); }
+.testi-info { font-size:0.68rem; color:var(--muted); }
+
+/* ═══════ PHONE BAR ═══════ */
+.phone-bar {
+  background:var(--dark); border-top:1px solid rgba(212,168,67,0.1);
+  padding:1.25rem 1.5rem; text-align:center;
+}
+.phone-bar a {
+  display:inline-flex; align-items:center; gap:0.5rem;
+  font-family:'Lora',serif; font-size:1.3rem; color:var(--gold);
+  transition:color 0.2s;
+}
+.phone-bar a:hover { color:var(--gold-l); }
+.phone-bar .ph-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); margin-bottom:0.3rem; }
+
+/* ═══════ FOOTER ═══════ */
+footer {
+  background:var(--dark); border-top:1px solid rgba(255,255,255,0.04);
+  padding:2rem 1.5rem; text-align:center;
+}
+.footer-brand {
+  font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:0.08em; color:var(--gold);
+  margin-bottom:0.5rem;
+}
+.footer-links { display:flex; justify-content:center; gap:1.5rem; margin-top:1rem; flex-wrap:wrap; }
+.footer-links a { font-size:0.78rem; color:var(--muted); transition:color 0.2s; }
+.footer-links a:hover { color:var(--gold); }
+.footer-copy { font-size:0.72rem; color:var(--muted); margin-top:1rem; }
+
+/* ═══════ WHATSAPP FLOAT ═══════ */
+.wa-float {
+  position:fixed; bottom:1.5rem; right:1.5rem; z-index:200;
+  display:flex; align-items:center; gap:0.6rem;
+  background:var(--green); color:#fff;
+  padding:0.7rem 1.1rem 0.7rem 0.85rem; border-radius:50px;
+  box-shadow:0 4px 20px rgba(37,211,102,0.35);
+  font-size:0.78rem; font-weight:500; letter-spacing:0.05em;
+  transition:transform 0.25s, box-shadow 0.25s;
+  animation: fadeUp 1s 0.5s ease both;
+}
+.wa-float:hover { transform:translateY(-3px); box-shadow:0 8px 28px rgba(37,211,102,0.45); }
+.wa-float .wi { font-size:1.25rem; }
+
+/* ═══════ REVEAL ═══════ */
+.reveal { opacity:0; transform:translateY(22px); transition:opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+.rd1 { transition-delay:0.1s; }
+.rd2 { transition-delay:0.2s; }
+.rd3 { transition-delay:0.3s; }
+
+/* ═══════ RESPONSIVE ═══════ */
+@media(max-width:700px) {
+  .promos-grid { grid-template-columns:1fr; }
+  .pricing-grid { grid-template-columns:1fr; }
+  .part-box { grid-template-columns:1fr; }
+  .map-box { grid-template-columns:1fr; }
+  .testi-grid { grid-template-columns:1fr; }
+  .wa-float span.wt { display:none; }
+  .wa-float { padding:0.85rem; border-radius:50%; }
+  .hero-actions { flex-direction:column; align-items:center; }
+}
+@media(max-width:480px) {
+  .schedule-table th, .schedule-table td { padding:0.75rem 1rem; }
+}
+</style>
+</head>
+<body data-lang="pt">
+
+<!-- ── LANG BAR ── -->
+<div class="lang-bar">
+  <div class="lang-logo">ACADEMIA <span>SALSA ALGARVE</span></div>
+  <div class="lang-flags">
+    <button class="flag-btn active" id="btnPT" onclick="setLang('pt')">🇵🇹 PT</button>
+    <button class="flag-btn" id="btnEN" onclick="setLang('en')">🇬🇧 EN</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="logo-wrap">
+      <div class="logo-icon">💃</div>
+      <div class="logo-text">
+        <div class="logo-name">Academia de Salsa do Algarve</div>
+        <div class="logo-sub">Associação Bluedance</div>
+      </div>
+    </div>
+
+    <div class="hero-eyebrow pt">📍 Tavira · A partir de Janeiro 2026</div>
+    <div class="hero-eyebrow en">📍 Tavira · Starting January 2026</div>
+
+    <h1 class="pt">Aprende <em>Salsa</em><br>em Tavira</h1>
+    <h1 class="en">Learn <em>Salsa</em><br>in Tavira</h1>
+
+    <p class="hero-subtitle pt">Aulas para iniciantes e intermédios · Ginásio Clube de Tavira</p>
+    <p class="hero-subtitle en">Classes for beginners & intermediates · Ginásio Clube de Tavira</p>
+
+    <p class="hero-desc pt">Não precisas de experiência. Não precisas de par. Começa a dançar e descobre como a Salsa transforma a tua confiança, a tua energia e a tua vida social.</p>
+    <p class="hero-desc en">No experience needed. No partner needed. Start dancing and discover how Salsa transforms your confidence, energy and social life.</p>
+
+    <div class="hero-actions">
+      <a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20nas%20aulas%20de%20Salsa%20em%20Tavira." class="btn btn-red" target="_blank">
+        <span>💬</span>
+        <span class="pt">Inscrever-me agora</span>
+        <span class="en">Sign up now</span>
+      </a>
+      <a href="#horarios" class="btn btn-outline">
+        <span class="pt">Ver Horários ↓</span>
+        <span class="en">View Schedule ↓</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     HORÁRIOS
+══════════════════════════════════════ -->
+<section class="section section-dark" id="horarios">
+  <div class="container">
+    <div class="eyebrow reveal pt">Agenda semanal</div>
+    <div class="eyebrow reveal en">Weekly schedule</div>
+    <h2 class="sh reveal pt">Horário das <em>Aulas</em></h2>
+    <h2 class="sh reveal en">Class <em>Schedule</em></h2>
+    <p class="body-text reveal pt">Aulas regulares semanais, a partir de 1 de Janeiro de 2026. Inscrição aberta a qualquer momento — começas na semana seguinte.</p>
+    <p class="body-text reveal en">Regular weekly classes, starting 1 January 2026. Open enrolment — you can start any week.</p>
+
+    <div class="schedule-wrap reveal">
+      <div class="schedule-card">
+        <div class="schedule-header">
+          <div class="schedule-loc-icon">🏋️</div>
+          <div>
+            <div class="schedule-loc-name">Ginásio Clube de Tavira</div>
+            <div class="schedule-loc-addr">
+              <a href="https://maps.app.goo.gl/QZ6g6UjdCDE5wDcd9" target="_blank">📍 Ver no Google Maps</a>
+            </div>
+          </div>
+        </div>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th class="pt">Dia</th><th class="en">Day</th>
+              <th class="pt">Hora</th><th class="en">Time</th>
+              <th class="pt">Modalidade</th><th class="en">Style</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="day pt">Terça-feira</td>
+              <td class="day en">Tuesday</td>
+              <td class="time">18:00</td>
+              <td class="time" style="display:none"></td>
+              <td><span class="dance-badge db-salsa">🔥 Salsa</span></td>
+              <td style="display:none"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="schedule-note">
+          <span>ℹ️</span>
+          <span class="pt">Aulas com duração de 50 minutos. Chegada recomendada 5 minutos antes. Roupa confortável e sapatilhas adequadas.</span>
+          <span class="en">Classes last 50 minutes. Arrive 5 minutes early. Comfortable clothes and appropriate shoes recommended.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PROMOÇÕES
+══════════════════════════════════════ -->
+<section class="section" id="promocoes">
+  <div class="container">
+    <div class="eyebrow reveal pt">Ofertas especiais</div>
+    <div class="eyebrow reveal en">Special offers</div>
+    <h2 class="sh reveal pt"><em>Promoções</em> exclusivas</h2>
+    <h2 class="sh reveal en">Exclusive <em>Promotions</em></h2>
+    <p class="body-text reveal pt">Aproveita as nossas promoções e traz quem gostas de dançar contigo.</p>
+    <p class="body-text reveal en">Take advantage of our promotions and bring someone to dance with you.</p>
+
+    <div class="promos-grid">
+      <div class="promo-card reveal rd1">
+        <div class="promo-icon">👫</div>
+        <div class="promo-title pt">Desconto Casal</div>
+        <div class="promo-title en">Couples Discount</div>
+        <div class="promo-desc pt">Inscreve-te com o teu par e ambos pagam menos. Aprendam juntos, progridam juntos.</div>
+        <div class="promo-desc en">Sign up as a couple and you both pay less. Learn together, grow together.</div>
+        <div class="promo-tag pt">Fala connosco</div>
+        <div class="promo-tag en">Contact us</div>
+      </div>
+      <div class="promo-card reveal rd2">
+        <div class="promo-icon">🤝</div>
+        <div class="promo-title pt">Traz um Amigo</div>
+        <div class="promo-title en">Bring a Friend</div>
+        <div class="promo-desc pt">Indica um amigo e ambos ganham desconto no mês seguinte. Quanto mais, melhor!</div>
+        <div class="promo-desc en">Refer a friend and you both get a discount next month. The more the merrier!</div>
+        <div class="promo-tag pt">Fala connosco</div>
+        <div class="promo-tag en">Contact us</div>
+      </div>
+      <div class="promo-card reveal rd3">
+        <div class="promo-icon">🆕</div>
+        <div class="promo-title pt">Aula Experimental</div>
+        <div class="promo-title en">Trial Class</div>
+        <div class="promo-desc pt">Nunca dançaste? Experimenta a primeira aula e vê se é para ti. Sem compromisso.</div>
+        <div class="promo-desc en">Never danced? Try the first class and see if it's for you. No commitment.</div>
+        <div class="promo-tag pt">Primeira aula</div>
+        <div class="promo-tag en">First class</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20mais%20sobre%20as%20promoções%20para%20as%20aulas%20em%20Tavira." class="btn btn-whatsapp reveal" target="_blank">
+        <span>💬</span>
+        <span class="pt">Saber mais sobre promoções</span>
+        <span class="en">Ask about promotions</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PREÇOS
+══════════════════════════════════════ -->
+<section class="section section-dark" id="precos">
+  <div class="container">
+    <div class="eyebrow reveal pt">Mensalidades</div>
+    <div class="eyebrow reveal en">Pricing</div>
+    <h2 class="sh reveal pt">Preços <em>simples e acessíveis</em></h2>
+    <h2 class="sh reveal en">Simple, <em>affordable pricing</em></h2>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal rd1">
+        <div class="price-label pt">Drop-in · Avulso</div>
+        <div class="price-label en">Drop-in class</div>
+        <div class="price-amount"><sup>€</sup>10</div>
+        <div class="price-per pt">por aula</div>
+        <div class="price-per en">per class</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li class="pt">Sem compromisso mensal</li>
+          <li class="en">No monthly commitment</li>
+          <li class="pt">Paga só quando vens</li>
+          <li class="en">Pay only when you attend</li>
+        </ul>
+        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20mais%20sobre%20aula%20avulso%20em%20Tavira." class="btn btn-outline price-cta" target="_blank" style="width:100%;justify-content:center;display:flex;">
+          <span class="pt">Inscrever →</span>
+          <span class="en">Sign up →</span>
+        </a>
+      </div>
+
+      <div class="price-card featured reveal rd2" data-label="Mais popular · Most popular">
+        <div class="price-label pt">1 aula / semana</div>
+        <div class="price-label en">1 class / week</div>
+        <div class="price-amount"><sup>€</sup>30</div>
+        <div class="price-per pt">por mês</div>
+        <div class="price-per en">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li class="pt">4 aulas por mês</li>
+          <li class="en">4 classes per month</li>
+          <li class="pt">Melhor valor/semana</li>
+          <li class="en">Best value per week</li>
+          <li class="pt">Progresso constante</li>
+          <li class="en">Steady progress</li>
+        </ul>
+        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20na%20mensalidade%20de%20Tavira." class="btn btn-gold price-cta" target="_blank" style="width:100%;justify-content:center;display:flex;">
+          <span class="pt">Inscrever →</span>
+          <span class="en">Sign up →</span>
+        </a>
+      </div>
+
+      <!-- Particulares card -->
+      <div class="price-card reveal rd3">
+        <div class="price-label pt">Aulas Particulares</div>
+        <div class="price-label en">Private Lessons</div>
+        <div class="price-amount" style="font-size:1.8rem;margin-top:0.4rem;" class="pt">Sob consulta</div>
+        <div class="price-amount" style="font-size:1.8rem;margin-top:0.4rem;" class="en">On request</div>
+        <div class="price-per" style="margin-top:0.4rem;"><span class="pt">Preço via WhatsApp</span><span class="en">Price via WhatsApp</span></div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li class="pt">Atenção 100% focada</li>
+          <li class="en">100% focused attention</li>
+          <li class="pt">Evolução mais rápida</li>
+          <li class="en">Faster progress</li>
+          <li class="pt">Horário flexível</li>
+          <li class="en">Flexible schedule</li>
+          <li class="pt">Coreografias de casamento</li>
+          <li class="en">Wedding choreography</li>
+        </ul>
+        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20mais%20sobre%20aulas%20particulares%20em%20Tavira." class="btn btn-red price-cta" target="_blank" style="width:100%;justify-content:center;display:flex;">
+          <span>💬 </span>
+          <span class="pt">Pedir preço</span>
+          <span class="en">Request price</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Particulares detail box -->
+    <div class="part-box reveal" style="margin-top:2rem;">
+      <div class="part-info">
+        <div class="eyebrow pt">Aulas privadas</div>
+        <div class="eyebrow en">Private lessons</div>
+        <h3 style="font-family:'Lora',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;" class="pt">Para quem quer <em style="color:var(--gold);">evoluir mais depressa</em></h3>
+        <h3 style="font-family:'Lora',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;" class="en">For those who want to <em style="color:var(--gold);">progress faster</em></h3>
+        <ul class="part-reasons">
+          <li><span>⚡</span><span class="pt">Aprender ao teu próprio ritmo sem esperar pelo grupo</span><span class="en">Learn at your own pace without waiting for the group</span></li>
+          <li><span>💍</span><span class="pt">Preparar coreografia para casamento ou evento especial</span><span class="en">Prepare a choreography for a wedding or special event</span></li>
+          <li><span>🎯</span><span class="pt">Trabalhar pontos específicos — voltas, musicality, estilo</span><span class="en">Work on specific areas — turns, musicality, styling</span></li>
+          <li><span>🕐</span><span class="pt">Horário flexível à medida das tuas disponibilidades</span><span class="en">Flexible schedule tailored to your availability</span></li>
+        </ul>
+      </div>
+      <div class="part-price-box" style="text-align:center;padding:1.5rem;background:var(--dark);border-radius:3px;">
+        <div style="font-size:3rem;margin-bottom:0.5rem;">🤫</div>
+        <p class="body-text pt" style="margin-bottom:1.25rem;">Os preços das aulas particulares são personalizados. Fala connosco no WhatsApp e encontramos a melhor opção para ti.</p>
+        <p class="body-text en" style="margin-bottom:1.25rem;">Private lesson prices are personalised. Talk to us on WhatsApp and we'll find the best option for you.</p>
+        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20o%20preço%20das%20aulas%20particulares%20de%20Salsa%20em%20Tavira." class="btn btn-whatsapp" target="_blank">
+          <span>💬 </span>
+          <span class="pt">Pedir preço</span>
+          <span class="en">Get a quote</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PORQUÊ DANÇAR
+══════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow reveal pt">Porque aprender</div>
+    <div class="eyebrow reveal en">Why learn to dance</div>
+    <h2 class="sh reveal pt">A Salsa <em>muda-te</em></h2>
+    <h2 class="sh reveal en">Salsa <em>changes you</em></h2>
+    <div class="promos-grid" style="margin-top:2rem;">
+      <div class="promo-card reveal rd1">
+        <div class="promo-icon">🤝</div>
+        <div class="promo-title pt">Conhecer pessoas</div>
+        <div class="promo-title en">Meet people</div>
+        <div class="promo-desc pt">A dança é a forma mais rápida de criar ligações genuínas com pessoas novas em Tavira.</div>
+        <div class="promo-desc en">Dance is the fastest way to build genuine connections with new people in Tavira.</div>
+      </div>
+      <div class="promo-card reveal rd2">
+        <div class="promo-icon">💪</div>
+        <div class="promo-title pt">Ganhar confiança</div>
+        <div class="promo-title en">Build confidence</div>
+        <div class="promo-desc pt">Transforma a forma como te moves e como te sentes no teu próprio corpo.</div>
+        <div class="promo-desc en">Transform the way you move and the way you feel in your own body.</div>
+      </div>
+      <div class="promo-card reveal rd3">
+        <div class="promo-icon">🎵</div>
+        <div class="promo-title pt">Exercício divertido</div>
+        <div class="promo-title en">Fun exercise</div>
+        <div class="promo-desc pt">50 minutos de dança queimam até 400 calorias sem sentires que estás a treinar.</div>
+        <div class="promo-desc en">50 minutes of dance burns up to 400 calories without feeling like a workout.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     DEPOIMENTOS
+══════════════════════════════════════ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="eyebrow reveal pt">O que dizem os alunos</div>
+    <div class="eyebrow reveal en">What students say</div>
+    <h2 class="sh reveal pt"><em>Histórias</em> reais</h2>
+    <h2 class="sh reveal en"><em>Real</em> stories</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal rd1">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-q pt">"Comecei sem nenhuma experiência e em poucas semanas já dançava salsa com confiança. O Lino é um professor incrível — paciente e muito divertido."</div>
+        <div class="testi-q en">"I started with no experience and within a few weeks I was dancing salsa with confidence. Lino is an incredible teacher — patient and so much fun."</div>
+        <div class="testi-author">
+          <div class="testi-av">A</div>
+          <div><div class="testi-name">Ana S.</div><div class="testi-info">Faro · Salsa</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal rd2">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-q pt">"Vim para Tavira e descobri as aulas de salsa quase por acaso. Já não consigo parar. Em cada aula aprendo algo novo e saio sempre com um sorriso."</div>
+        <div class="testi-q en">"I came to Tavira and discovered the salsa classes almost by chance. I can't stop now. Every class I learn something new and always leave with a smile."</div>
+        <div class="testi-author">
+          <div class="testi-av">R</div>
+          <div><div class="testi-name">Rui M.</div><div class="testi-info">Tavira · Salsa</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     LOCALIZAÇÃO
+══════════════════════════════════════ -->
+<section class="section" id="local">
+  <div class="container">
+    <div class="eyebrow reveal pt">Onde nos encontrar</div>
+    <div class="eyebrow reveal en">Where to find us</div>
+    <h2 class="sh reveal pt">Ginásio Clube <em>de Tavira</em></h2>
+    <h2 class="sh reveal en">Ginásio Clube <em>de Tavira</em></h2>
+
+    <div class="map-box reveal">
+      <div class="map-info">
+        <div class="map-detail">
+          <span class="mi">📍</span>
+          <div>
+            <strong style="color:var(--cream);display:block;margin-bottom:0.2rem;">Ginásio Clube de Tavira</strong>
+            <span class="pt">Tavira, Algarve, Portugal</span>
+            <span class="en">Tavira, Algarve, Portugal</span>
+          </div>
+        </div>
+        <div class="map-detail">
+          <span class="mi">📅</span>
+          <div>
+            <strong style="color:var(--cream);display:block;margin-bottom:0.2rem;" class="pt">Terça-feira</strong>
+            <strong style="color:var(--cream);display:block;margin-bottom:0.2rem;" class="en">Tuesday</strong>
+            <span>18:00 — Salsa</span>
+          </div>
+        </div>
+        <div class="map-detail">
+          <span class="mi">📱</span>
+          <div>
+            <a href="tel:+351912544500" style="color:var(--gold);font-size:1.05rem;font-family:'Lora',serif;">+351 912 544 500</a>
+          </div>
+        </div>
+        <a href="https://maps.app.goo.gl/QZ6g6UjdCDE5wDcd9" target="_blank" class="btn btn-outline" style="margin-top:0.5rem;width:fit-content;">
+          <span>🗺️ </span>
+          <span class="pt">Abrir no Maps</span>
+          <span class="en">Open in Maps</span>
+        </a>
+      </div>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.7!2d-7.6536!3d37.1261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0674b0000000001%3A0x1!2sGin%C3%A1sio+Clube+de+Tavira!5e0!3m2!1spt!2spt!4v1"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Ginásio Clube de Tavira">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CTA WHATSAPP
+══════════════════════════════════════ -->
+<div class="cta-banner" id="inscrever">
+  <h2 class="pt">Pronto para começar?</h2>
+  <h2 class="en">Ready to start?</h2>
+  <p class="pt">Não precisas de experiência. Não precisas de par. A tua primeira aula está à espera.</p>
+  <p class="en">No experience needed. No partner needed. Your first class is waiting.</p>
+  <div class="cta-actions">
+    <a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20nas%20aulas%20de%20Salsa%20em%20Tavira%20a%20partir%20de%20Janeiro%202026." class="btn btn-gold" target="_blank">
+      💬 WhatsApp — <span class="pt">Inscrever agora</span><span class="en">Sign up now</span>
+    </a>
+    <a href="tel:+351912544500" class="btn btn-ghost-white" style="border:1px solid rgba(255,255,255,0.35);color:#fff;">
+      📞 +351 912 544 500
+    </a>
+  </div>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:rgba(255,255,255,0.45);" class="pt">Ou preenche o formulário abaixo ↓</p>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:rgba(255,255,255,0.45);" class="en">Or fill in the form below ↓</p>
+</div>
+
+<!-- ══════════════════════════════════════
+     FORMULÁRIO
+══════════════════════════════════════ -->
+<section class="section section-dark" id="formulario">
+  <div class="container">
+    <div class="eyebrow reveal pt">Inscrição online</div>
+    <div class="eyebrow reveal en">Online registration</div>
+    <h2 class="sh reveal pt">Formulário de <em>Inscrição</em></h2>
+    <h2 class="sh reveal en"><em>Registration</em> Form</h2>
+    <p class="body-text reveal pt">Preenche o formulário e entraremos em contacto para confirmar a tua inscrição.</p>
+    <p class="body-text reveal en">Fill in the form and we'll get in touch to confirm your registration.</p>
+
+    <div class="form-wrap reveal">
+      <div class="form-header">
+        <h3 class="pt">Inscreve-te nas aulas de Salsa em Tavira</h3>
+        <h3 class="en">Sign up for Salsa classes in Tavira</h3>
+        <p class="pt">Terças às 18:00 · Ginásio Clube de Tavira · A partir de Janeiro 2026</p>
+        <p class="en">Tuesdays at 18:00 · Ginásio Clube de Tavira · From January 2026</p>
+      </div>
+      <div class="form-body">
+        <div class="form-inner">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfGPslc-38BgJbpbWPnk24E1N0oI6PkQl7vO8VFGLM9IFsYIQ/viewform?embedded=true"
+            width="100%"
+            height="1538"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Formulário de inscrição - Academia de Salsa do Algarve - Tavira">
+            A carregar…
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PHONE BAR
+══════════════════════════════════════ -->
+<div class="phone-bar">
+  <div class="ph-label pt">Contacto directo</div>
+  <div class="ph-label en">Direct contact</div>
+  <a href="tel:+351912544500">📞 +351 912 544 500</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">Academia de Salsa do Algarve</div>
+  <p style="font-size:0.82rem;color:var(--muted);margin-top:0.3rem;" class="pt">Aulas de Salsa em Tavira · Ginásio Clube de Tavira · Terças 18:00</p>
+  <p style="font-size:0.82rem;color:var(--muted);margin-top:0.3rem;" class="en">Salsa classes in Tavira · Ginásio Clube de Tavira · Tuesdays 18:00</p>
+  <div class="footer-links">
+    <a href="https://www.salsa-algarve.com" target="_blank">salsa-algarve.com</a>
+    <a href="https://wa.me/351912544500" target="_blank">WhatsApp</a>
+    <a href="mailto:geral@salsa-algarve.com">geral@salsa-algarve.com</a>
+    <a href="https://www.instagram.com/salsa_algarve" target="_blank">@salsa_algarve</a>
+  </div>
+  <div class="footer-copy">© 2026 Academia de Salsa do Algarve · Associação Bluedance</div>
+</footer>
+
+<!-- ── FLOATING WHATSAPP ── -->
+<a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20nas%20aulas%20de%20Salsa%20em%20Tavira." class="wa-float" target="_blank">
+  <span class="wi">💬</span>
+  <span class="wt pt">Inscrever no WhatsApp</span>
+  <span class="wt en">WhatsApp us</span>
+</a>
+
+<script>
+/* ── LANG ── */
+function setLang(l) {
+  document.body.setAttribute('data-lang', l);
+  document.getElementById('btnPT').classList.toggle('active', l==='pt');
+  document.getElementById('btnEN').classList.toggle('active', l==='en');
+  document.documentElement.lang = l;
+}
+
+/* ── SCROLL REVEAL ── */
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* ── NAVBAR SCROLL ── */
+window.addEventListener('scroll', () => {
+  document.querySelector('.lang-bar').style.boxShadow =
+    window.scrollY > 10 ? '0 2px 20px rgba(0,0,0,0.4)' : 'none';
+});
+</script>
+</body>
+</html>
