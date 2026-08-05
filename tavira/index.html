@@ -1,967 +1,785 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Aulas de Salsa em Tavira – Academia de Salsa do Algarve. Ginásio Clube de Tavira, Terças 18:00. Inscreve-te já!">
-<meta name="keywords" content="salsa tavira, aulas de dança tavira, academia salsa algarve, kizomba tavira">
-<meta property="og:title" content="Aulas de Salsa em Tavira · Academia de Salsa do Algarve">
-<meta property="og:description" content="Começa a dançar em Tavira. Terças às 18:00 no Ginásio Clube de Tavira. Inscrições abertas!">
-<title>Aulas de Salsa em Tavira · Academia de Salsa do Algarve</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-pt="Aulas de Salsa em Tavira · Academia de Salsa do Algarve" data-en="Salsa classes in Tavira · Academia de Salsa do Algarve">Aulas de Salsa em Tavira · Academia de Salsa do Algarve</title>
+<meta name="description" content="Aulas de Salsa em Tavira, terças às 18h00 no Ginásio Clube de Tavira. Dois grupos: iniciados e intermédios. Aula experimental grátis, 30 €/mês ou 10 € avulso.">
+<link rel="canonical" href="https://algarvedance.com/tavira/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://algarvedance.com/tavira/">
+<meta property="og:title" content="Aprende Salsa em Tavira · Academia de Salsa do Algarve">
+<meta property="og:description" content="Aulas de Salsa em Tavira, terças às 18h00 no Ginásio Clube de Tavira. Dois grupos: iniciados e intermédios. Aula experimental grátis, 30 €/mês ou 10 € avulso.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1887776615233593');
+fbq('track', 'PageView');
+document.addEventListener('click', function(e) {
+  var t = e.target;
+  var a = t && t.closest ? t.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]') : null;
+  if (!a) return;
+  if (window.fbq) fbq('track', 'Lead', {
+    content_name: 'tavira',
+    content_category: 'whatsapp',
+    source_url: location.href
+  });
+}, true);
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1887776615233593&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 <style>
-/* ═══════ RESET & VARIABLES ═══════ */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-:root {
-  --black:   #0A0806;
-  --dark:    #1A1510;
-  --card:    #221D16;
-  --red:     #C0392B;
-  --red2:    #922B21;
-  --gold:    #D4A843;
-  --gold-l:  #F0C96A;
-  --gold-d:  rgba(212,168,67,0.15);
-  --cream:   #F5EFE6;
-  --text:    #C4B89E;
-  --muted:   #6B6050;
-  --green:   #25D366;
-}
-html { scroll-behavior: smooth; font-size:16px; }
-body {
-  background: var(--black);
-  color: var(--cream);
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-a { color:inherit; text-decoration:none; }
-img { max-width:100%; display:block; }
 
-/* ═══════ LANG SYSTEM ═══════ */
-[data-lang="en"] .pt { display:none!important; }
-[data-lang="pt"] .en { display:none!important; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0A0806; --surface:#1A1510; --card:#221D16;
+  --red:#C0392B; --gold:#D4A843; --gold-light:#F0C96A;
+  --cream:#F5EFE6; --secondary:#C4B89E; --muted:#A89C86;
+  --line:rgba(212,168,67,.18);
+  --nav-h:72px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--cream);
+  font-family:'DM Sans',system-ui,sans-serif; font-weight:300;
+  font-size:17px; line-height:1.7; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.03;
+  background-image:repeating-linear-gradient(45deg,var(--gold) 0 1px,transparent 1px 14px);
+}
+h1,h2,h3,.display{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.02em}
+em,.serif{font-family:'Lora',Georgia,serif;font-style:italic;font-weight:400}
+.wrap{width:min(1120px,92vw);margin:0 auto;position:relative;z-index:1}
+section{padding:clamp(64px,9vw,120px) 0;position:relative;z-index:1}
 
-/* ═══════ LANG TOGGLE ═══════ */
-.lang-bar {
-  position: fixed; top:0; left:0; right:0; z-index:300;
-  background: rgba(10,8,6,0.96);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(212,168,67,0.1);
-  display: flex; align-items:center; justify-content:space-between;
-  padding: 0.65rem 1.5rem;
+/* ---------- navbar ---------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;
+  background:rgba(10,8,6,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
 }
-.lang-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1rem; letter-spacing:0.08em;
-  color: var(--gold);
+.nav-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.brand img{width:44px;height:44px;display:block}
+.brand-txt{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.09em;color:var(--gold);line-height:1;white-space:nowrap}
+.brand-txt small{display:block;font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.2em;color:var(--secondary);text-transform:uppercase;margin-top:4px;font-weight:400}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{color:var(--secondary);text-decoration:none;font-size:13px;letter-spacing:.13em;text-transform:uppercase;transition:color .25s}
+.nav-links a:hover{color:var(--gold)}
+.lang{display:flex;border:1px solid var(--line);border-radius:2px;overflow:hidden;flex-shrink:0}
+.lang button{
+  background:transparent;border:0;color:var(--muted);font-family:'DM Sans',sans-serif;
+  font-size:11px;letter-spacing:.14em;padding:7px 11px;cursor:pointer;transition:all .25s;font-weight:500;
 }
-.lang-logo span { color:var(--cream); }
-.lang-flags { display:flex; gap:0.4rem; align-items:center; }
-.flag-btn {
-  display:flex; align-items:center; gap:0.35rem;
-  padding:0.3rem 0.7rem; border-radius:3px; cursor:pointer;
-  font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase;
-  border:1px solid transparent; transition:all 0.2s;
-  font-family:'DM Sans',sans-serif; background:none; color:var(--muted);
-}
-.flag-btn.active { border-color:var(--gold); color:var(--gold); background:rgba(212,168,67,0.08); }
-.flag-btn:hover:not(.active) { color:var(--text); border-color:var(--muted); }
+.lang button.on{background:var(--gold);color:var(--bg)}
+.lang button:not(.on):hover{color:var(--cream)}
 
-/* ═══════ HERO ═══════ */
-.hero {
-  min-height: 100vh;
-  display:flex; align-items:center; justify-content:center;
-  text-align:center;
-  padding: 6rem 1.5rem 4rem;
-  position:relative; overflow:hidden;
+/* ---------- hero ---------- */
+.hero{padding-top:calc(var(--nav-h) + clamp(56px,9vw,104px));padding-bottom:clamp(56px,8vw,100px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,6vw,80px);align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:11px;font-size:11px;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:26px;font-weight:500;
 }
-.hero-bg {
-  position:absolute; inset:0; z-index:0;
-  background:
-    radial-gradient(ellipse 70% 60% at 50% 30%, rgba(192,57,43,0.14) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(212,168,67,0.07) 0%, transparent 50%),
-    linear-gradient(160deg, #0A0806 0%, #140F0A 50%, #0A0806 100%);
-}
-.hero-pattern {
-  position:absolute; inset:0; opacity:0.025;
-  background-image: repeating-linear-gradient(
-    45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%
-  );
-  background-size: 28px 28px;
-}
-.hero-content { position:relative; z-index:2; max-width:720px; margin:0 auto; }
+.eyebrow::before{content:'';width:34px;height:1px;background:var(--gold)}
+h1{font-size:clamp(52px,8.2vw,104px);color:var(--cream);margin-bottom:6px}
+h1 .accent{color:var(--gold)}
+.hero-sub{font-family:'Lora',serif;font-style:italic;font-size:clamp(19px,2.5vw,26px);color:var(--gold-light);line-height:1.45;margin-bottom:26px;font-weight:400}
+.lede{color:var(--secondary);max-width:48ch;margin-bottom:34px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:34px}
+.hero-meta div{padding:16px 26px 16px 0;margin-right:26px;border-right:1px solid var(--line)}
+.hero-meta div:last-child{border-right:0;margin-right:0;padding-right:0}
+.hero-meta .k{font-family:'Bebas Neue',sans-serif;font-size:27px;color:var(--gold);line-height:1}
+.hero-meta .v{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--secondary);margin-top:6px}
 
-/* Logo */
-.logo-wrap {
-  display:flex; align-items:center; justify-content:center;
-  gap:0.8rem; margin-bottom:2rem;
-  animation: fadeUp 0.8s ease both;
+/* ---------- badge / medalha lateral ---------- */
+.hero-card{
+  border:1px solid var(--line);background:linear-gradient(160deg,var(--card),var(--surface));
+  padding:clamp(28px,3.6vw,44px);position:relative;
 }
-.logo-icon {
-  width:64px; height:64px; border-radius:50%;
-  background:linear-gradient(135deg, var(--red2), var(--red));
-  display:flex; align-items:center; justify-content:center;
-  font-size:2rem; border:2px solid rgba(212,168,67,0.3);
-  flex-shrink:0;
-}
-.logo-text { text-align:left; }
-.logo-name {
-  font-family:'Bebas Neue',sans-serif;
-  font-size:1.15rem; letter-spacing:0.06em; color:var(--gold); line-height:1.1;
-}
-.logo-sub {
-  font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase;
-  color:var(--muted); margin-top:0.15rem;
-}
+.hero-card::before{content:'';position:absolute;top:-1px;left:-1px;width:44px;height:44px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
+.hero-card::after{content:'';position:absolute;bottom:-1px;right:-1px;width:44px;height:44px;border-bottom:2px solid var(--gold);border-right:2px solid var(--gold)}
+.hc-label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--secondary);margin-bottom:16px}
+.hc-price{font-family:'Bebas Neue',sans-serif;font-size:clamp(60px,9vw,86px);color:var(--cream);line-height:.86}
+.hc-price sup{font-size:.36em;color:var(--gold);vertical-align:super;margin-left:5px}
+.hc-note{font-family:'Lora',serif;font-style:italic;color:var(--gold-light);font-size:15px;margin-top:8px}
+.hc-rule{height:1px;background:var(--line);margin:22px 0}
+.hc-row{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;padding:7px 0;color:var(--secondary)}
+.hc-row b{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.03em;color:var(--cream);font-weight:400}
+.hc-row.past{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.hc-row.past b{color:var(--muted)}
 
-.hero-eyebrow {
-  display:inline-flex; align-items:center; gap:0.5rem;
-  background:rgba(212,168,67,0.08); border:1px solid rgba(212,168,67,0.2);
-  color:var(--gold); font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase;
-  padding:0.3rem 1rem; border-radius:20px; margin-bottom:1.5rem;
-  animation: fadeUp 0.8s 0.1s ease both;
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:11px;
+  font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:.11em;
+  padding:17px 34px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:all .28s;
 }
-.hero h1 {
-  font-family:'Bebas Neue',sans-serif;
-  font-size: clamp(3rem, 10vw, 6.5rem);
-  line-height:0.93; letter-spacing:0.02em;
-  color:var(--cream); margin-bottom:0.5rem;
-  animation: fadeUp 0.8s 0.15s ease both;
-}
-.hero h1 em { color:var(--red); font-style:normal; }
-.hero-subtitle {
-  font-family:'Lora',serif; font-style:italic;
-  font-size:clamp(1.1rem,3vw,1.5rem);
-  color:var(--gold); margin-bottom:1.5rem;
-  animation: fadeUp 0.8s 0.2s ease both;
-}
-.hero-desc {
-  font-size:1rem; line-height:1.7; color:var(--text);
-  max-width:560px; margin:0 auto 2.5rem;
-  animation: fadeUp 0.8s 0.25s ease both;
-}
-.hero-actions {
-  display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;
-  animation: fadeUp 0.8s 0.3s ease both;
-}
-@keyframes fadeUp {
-  from { opacity:0; transform:translateY(24px); }
-  to   { opacity:1; transform:translateY(0); }
-}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:#A93226;transform:translateY(-2px);box-shadow:0 12px 30px rgba(192,57,43,.32)}
+.btn-ghost{border-color:var(--line);color:var(--gold);background:transparent}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(212,168,67,.07);color:var(--gold-light)}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn-sub{font-size:13px;letter-spacing:.09em;color:var(--secondary);margin-top:13px;text-transform:uppercase}
 
-/* ═══════ BUTTONS ═══════ */
-.btn {
-  display:inline-flex; align-items:center; gap:0.5rem;
-  padding:0.9rem 1.8rem; border-radius:2px;
-  font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase;
-  transition:all 0.22s; white-space:nowrap; cursor:pointer; border:none;
-  font-family:'DM Sans',sans-serif;
-}
-.btn-red { background:var(--red); color:#fff; }
-.btn-red:hover { background:var(--red2); transform:translateY(-2px); box-shadow:0 8px 24px rgba(192,57,43,0.3); }
-.btn-gold { background:var(--gold); color:var(--black); }
-.btn-gold:hover { background:var(--gold-l); transform:translateY(-2px); }
-.btn-outline { border:1px solid var(--muted); color:var(--text); background:none; }
-.btn-outline:hover { border-color:var(--gold); color:var(--gold); }
-.btn-whatsapp { background:var(--green); color:#fff; }
-.btn-whatsapp:hover { background:#1ebe5a; transform:translateY(-2px); box-shadow:0 8px 24px rgba(37,211,102,0.3); }
+/* ---------- cabeçalhos de secção ---------- */
+.sec-head{margin-bottom:clamp(34px,4.6vw,56px);max-width:62ch}
+.sec-head .eyebrow{margin-bottom:16px}
+h2{font-size:clamp(34px,5vw,58px);color:var(--cream);margin-bottom:14px}
+h2 em{color:var(--gold);font-size:.94em}
+.sec-head p{color:var(--secondary)}
+.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:0 0 clamp(30px,4vw,48px)}
 
-/* ═══════ SECTIONS ═══════ */
-.section { padding:5rem 1.5rem; }
-.section-dark { background:var(--dark); }
-.section-card { background:var(--card); }
-.container { max-width:900px; margin:0 auto; }
+/* ---------- cards ---------- */
+.grid{display:grid;gap:clamp(16px,2vw,24px)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{border:1px solid var(--line);background:var(--card);padding:clamp(24px,3vw,34px);transition:border-color .3s,transform .3s}
+.card:hover{border-color:rgba(212,168,67,.4);transform:translateY(-3px)}
+.card h3{font-size:25px;color:var(--gold);margin-bottom:11px}
+.card p{font-size:15px;color:var(--secondary)}
+.card .num{font-family:'Bebas Neue',sans-serif;font-size:41px;color:var(--red);line-height:1;margin-bottom:12px;display:block}
+.card .tag{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);padding:5px 10px;margin-top:15px}
 
-.eyebrow {
-  font-size:0.68rem; letter-spacing:0.25em; text-transform:uppercase;
-  color:var(--gold); display:flex; align-items:center; gap:0.6rem;
-  margin-bottom:0.8rem;
-}
-.eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--gold); }
 
-h2.sh {
-  font-family:'Lora',serif; font-size:clamp(1.6rem,4vw,2.4rem); font-weight:600;
-  color:var(--cream); line-height:1.15; margin-bottom:0.75rem;
-}
-h2.sh em { font-style:italic; color:var(--gold); }
-.body-text { font-size:0.95rem; line-height:1.75; color:var(--text); }
+/* ---------- críticas Google ---------- */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)}
+.rev{border:1px solid var(--line);background:var(--card);padding:clamp(22px,2.6vw,30px);display:flex;flex-direction:column}
+.rev .stars{color:var(--gold);font-size:16px;letter-spacing:.16em;margin-bottom:14px}
+.rev blockquote{font-family:'Lora',Georgia,serif;font-style:italic;font-size:17px;color:var(--cream);line-height:1.55;margin-bottom:18px}
+.rev .who{margin-top:auto;font-size:13px;color:var(--secondary);letter-spacing:.04em}
+.rev .who b{display:block;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.06em;color:var(--gold);font-weight:400;margin-bottom:2px}
+.g-badge{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--line);background:var(--card);padding:12px 18px;font-size:14px;color:var(--secondary);margin-top:28px;text-decoration:none;transition:border-color .3s}
+.g-badge:hover{border-color:var(--gold)}
+.g-badge b{font-family:'Bebas Neue',sans-serif;font-size:21px;color:var(--gold);font-weight:400;letter-spacing:.04em}
+.maps-link{display:inline-flex;align-items:center;gap:9px;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(212,168,67,.4);padding-bottom:1px;transition:color .25s,border-color .25s}
+.maps-link:hover{color:var(--gold-light);border-color:var(--gold-light)}
+.maps-link svg{width:15px;height:15px;fill:currentColor;flex-shrink:0}
 
-/* ═══════ SCHEDULE CARD ═══════ */
-.schedule-wrap { margin-top:2.5rem; }
-.schedule-card {
-  background:var(--card); border-radius:4px; overflow:hidden;
-  border:1px solid rgba(212,168,67,0.12);
-}
-.schedule-header {
-  background:linear-gradient(135deg, var(--red2), #7B241C);
-  padding:1.5rem 2rem; display:flex; align-items:center; gap:1.25rem;
-  position:relative; overflow:hidden;
-}
-.schedule-header::after {
-  content:''; position:absolute; inset:0;
-  background:repeating-linear-gradient(45deg,rgba(255,255,255,0.03) 0,rgba(255,255,255,0.03) 1px,transparent 0,transparent 50%);
-  background-size:18px 18px; pointer-events:none;
-}
-.schedule-loc-icon { font-size:1.8rem; flex-shrink:0; }
-.schedule-loc-name {
-  font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:0.06em; color:#fff;
-}
-.schedule-loc-addr { font-size:0.78rem; color:rgba(255,255,255,0.65); margin-top:0.15rem; }
-.schedule-loc-addr a { color:rgba(255,255,255,0.75); text-decoration:underline; text-underline-offset:2px; }
-.schedule-loc-addr a:hover { color:#fff; }
+/* objeções */
+.obj{border-left:2px solid var(--red);padding:4px 0 4px 24px;margin-bottom:30px}
+.obj .q{font-family:'Lora',serif;font-style:italic;font-size:21px;color:var(--cream);margin-bottom:9px}
+.obj .a{color:var(--secondary);font-size:16px}
 
-.schedule-table { width:100%; border-collapse:collapse; }
-.schedule-table th {
-  font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--muted); padding:0.75rem 1.5rem; text-align:left;
-  border-bottom:1px solid rgba(255,255,255,0.04);
-  font-weight:400;
+/* ---------- tabela de horários ---------- */
+.tbl-wrap{border:1px solid var(--line);overflow-x:auto;background:var(--card)}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th{
+  background:var(--surface);font-family:'DM Sans',sans-serif;font-weight:500;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--secondary);
+  padding:15px 20px;text-align:left;border-bottom:1px solid var(--line);
 }
-.schedule-table td {
-  padding:1rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.03);
-  font-size:0.9rem; color:var(--text); transition:background 0.2s;
+td{padding:17px 20px;border-bottom:1px solid rgba(212,168,67,.09);font-size:15px;color:var(--secondary);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+tbody tr{transition:background .25s}
+tbody tr:hover{background:rgba(212,168,67,.035)}
+tbody tr.is-this{background:rgba(212,168,67,.06)}
+td.time{font-family:'Bebas Neue',sans-serif;font-size:25px;color:var(--cream);letter-spacing:.03em;width:1%;white-space:nowrap}
+.badge{
+  display:inline-block;font-family:'DM Sans',sans-serif;font-weight:500;font-size:10px;
+  letter-spacing:.17em;text-transform:uppercase;padding:5px 12px;border:1px solid;white-space:nowrap;
 }
-.schedule-table tr:last-child td { border-bottom:none; }
-.schedule-table tr:hover td { background:rgba(212,168,67,0.03); }
-.schedule-table td.day {
-  font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold);
-  font-weight:500;
-}
-.schedule-table td.time {
-  font-family:'Lora',serif; font-size:1.1rem; color:var(--cream);
-}
-.dance-badge {
-  display:inline-flex; align-items:center; gap:0.35rem;
-  padding:0.25rem 0.75rem; border-radius:20px;
-  font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:500;
-}
-.db-salsa   { background:rgba(192,57,43,0.15); color:#E8776C; }
-.db-bachata { background:rgba(212,168,67,0.12); color:var(--gold); }
-.db-kizomba { background:rgba(155,89,182,0.12); color:#C080E0; }
+.b-salsa{color:#E8776A;border-color:rgba(192,57,43,.55);background:rgba(192,57,43,.13)}
+.b-bachata{color:var(--gold-light);border-color:rgba(212,168,67,.5);background:rgba(212,168,67,.11)}
+.b-roda{color:#B79BD6;border-color:rgba(150,110,200,.5);background:rgba(150,110,200,.13)}
+.b-cur{color:var(--bg);background:var(--gold);border-color:var(--gold)}
+.b-kizomba{color:#8FE0D6;border-color:rgba(47,158,146,.55);background:rgba(47,158,146,.15)}
 
-.schedule-note {
-  padding:1rem 1.5rem; background:rgba(212,168,67,0.04);
-  border-top:1px solid rgba(212,168,67,0.08);
-  font-size:0.82rem; color:var(--muted); line-height:1.5;
-  display:flex; align-items:flex-start; gap:0.5rem;
+/* ---------- preços ---------- */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,20px)}
+.tier{border:1px solid var(--line);background:var(--card);padding:clamp(24px,3vw,32px);position:relative;display:flex;flex-direction:column}
+.tier.now{border-color:var(--gold);background:linear-gradient(165deg,rgba(212,168,67,.09),var(--card))}
+.tier.now::before{
+  content:'A DECORRER';position:absolute;top:0;right:0;background:var(--gold);color:var(--bg);
+  font-family:'DM Sans',sans-serif;font-weight:500;font-size:9px;letter-spacing:.2em;padding:5px 11px;
+}
+.tier .t-n{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.2em;color:var(--gold);margin-bottom:3px}
+.tier .t-d{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--secondary);margin-bottom:22px}
+.tier .t-p{font-family:'Bebas Neue',sans-serif;font-size:clamp(46px,6.4vw,62px);color:var(--cream);line-height:.9}
+.tier .t-p sup{font-size:.34em;color:var(--gold);vertical-align:super;margin-left:4px}
+.tier .t-u{font-size:13px;color:var(--secondary);margin:8px 0 20px;letter-spacing:.06em}
+.tier ul{list-style:none;font-size:13px;color:var(--secondary);margin-top:auto;border-top:1px solid var(--line);padding-top:16px}
+.tier li{display:flex;justify-content:space-between;padding:5px 0}
+.tier li b{font-family:'Bebas Neue',sans-serif;font-size:17px;color:var(--cream);font-weight:400;letter-spacing:.03em}
+
+/* ---------- garantia ---------- */
+.guar{border:1px solid var(--line);background:linear-gradient(150deg,var(--card),var(--surface));padding:clamp(30px,4.5vw,56px);position:relative}
+.guar::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,var(--gold),transparent)}
+.guar h3{font-size:clamp(28px,3.6vw,40px);color:var(--gold);margin-bottom:18px}
+.guar .big{font-family:'Lora',serif;font-style:italic;font-size:clamp(19px,2.4vw,25px);color:var(--cream);line-height:1.5;margin-bottom:24px}
+.guar ol{list-style:none;counter-reset:g;margin-top:22px}
+.guar li{counter-increment:g;padding-left:42px;position:relative;margin-bottom:13px;color:var(--secondary);font-size:15px}
+.guar li::before{
+  content:counter(g);position:absolute;left:0;top:0;width:26px;height:26px;border:1px solid var(--gold);
+  color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:15px;display:flex;align-items:center;justify-content:center;
 }
 
-/* ═══════ PROMOTIONS ═══════ */
-.promos-grid {
-  display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2.5rem;
-}
-.promo-card {
-  background:var(--card); border-radius:4px; padding:1.75rem;
-  border:1px solid rgba(212,168,67,0.12);
-  text-align:center; transition:border-color 0.25s, transform 0.25s;
-}
-.promo-card:hover { border-color:rgba(212,168,67,0.35); transform:translateY(-3px); }
-.promo-icon { font-size:2.2rem; margin-bottom:0.75rem; }
-.promo-title {
-  font-family:'Lora',serif; font-size:1rem; font-weight:600;
-  color:var(--cream); margin-bottom:0.4rem;
-}
-.promo-desc { font-size:0.82rem; color:var(--text); line-height:1.55; }
-.promo-tag {
-  display:inline-block; margin-top:0.75rem;
-  background:rgba(192,57,43,0.15); color:var(--red);
-  font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase;
-  padding:0.2rem 0.65rem; border-radius:20px; font-weight:500;
-}
+/* ---------- CTA ---------- */
+.cta{background:linear-gradient(135deg,#7B1E14 0%,var(--red) 55%,#8E2A1E 100%);text-align:center;position:relative;overflow:hidden}
+.cta::after{content:'';position:absolute;inset:0;opacity:.06;background-image:repeating-linear-gradient(45deg,#fff 0 1px,transparent 1px 15px)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{color:#fff;margin-bottom:16px}
+.cta p{color:rgba(255,255,255,.9);max-width:56ch;margin:0 auto 32px}
+.cta .btn-primary{background:var(--cream);color:var(--bg)}
+.cta .btn-primary:hover{background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.cta .btn-sub{color:rgba(255,255,255,.68)}
 
-/* ═══════ PRICING ═══════ */
-.pricing-grid {
-  display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2.5rem;
-}
-.price-card {
-  background:var(--card); border-radius:4px; padding:1.75rem;
-  border:1px solid rgba(255,255,255,0.05);
-  text-align:center; transition:border-color 0.25s, transform 0.25s;
-  position:relative;
-}
-.price-card:hover { border-color:rgba(212,168,67,0.3); transform:translateY(-3px); }
-.price-card.featured {
-  border-color:var(--gold);
-}
-.price-card.featured::before {
-  content: attr(data-label);
-  position:absolute; top:0; left:0; right:0;
-  background:var(--gold); color:var(--black);
-  font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase;
-  padding:0.28rem; font-weight:500; text-align:center;
-  font-family:'DM Sans',sans-serif;
-}
-.price-card.featured { padding-top:2.2rem; }
-.price-label { font-size:0.75rem; color:var(--text); letter-spacing:0.05em; margin-bottom:0.5rem; }
-.price-amount {
-  font-family:'Bebas Neue',sans-serif; font-size:3.2rem;
-  color:var(--cream); line-height:1;
-}
-.price-amount sup { font-size:1.4rem; color:var(--muted); }
-.price-per { font-size:0.68rem; color:var(--muted); letter-spacing:0.1em; margin-top:0.2rem; }
-.price-divider { height:1px; background:rgba(255,255,255,0.05); margin:1.2rem 0; }
-.price-features { list-style:none; display:flex; flex-direction:column; gap:0.35rem; }
-.price-features li {
-  display:flex; align-items:center; gap:0.5rem;
-  font-size:0.82rem; color:var(--text);
-}
-.price-features li::before { content:'✓'; color:var(--gold); font-weight:600; flex-shrink:0; }
-.price-cta { margin-top:1.25rem; display:block; }
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--surface)}
+.f-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:36px;flex-wrap:wrap}
+.f-logo{display:flex;align-items:center;gap:13px}
+.f-logo img{width:52px;height:52px}
+footer p,footer a{font-size:15px;color:var(--secondary);text-decoration:none;line-height:1.65}
+footer a:hover{color:var(--gold)}
+.f-links{display:flex;flex-direction:column;gap:8px}
+.f-bot{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;font-size:13px;color:var(--secondary);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.f-bot a{font-size:13px}
 
-/* Particulares */
-.part-box {
-  background:var(--card); border-radius:4px; padding:2rem;
-  border:1px solid rgba(212,168,67,0.15);
-  display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center;
-  margin-top:2.5rem;
+/* ---------- WhatsApp flutuante ---------- */
+.wa{
+  position:fixed;right:22px;bottom:22px;z-index:200;width:58px;height:58px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 22px rgba(37,211,102,.4);transition:transform .28s,box-shadow .28s;
 }
-.part-info .subtitle {
-  font-family:'Lora',serif; font-style:italic; font-size:1rem;
-  color:var(--gold); margin-bottom:0.75rem;
+.wa:hover{transform:scale(1.09);box-shadow:0 8px 30px rgba(37,211,102,.58)}
+.wa svg{width:31px;height:31px;fill:#fff}
+.wa::after{
+  content:attr(data-tip);position:absolute;right:70px;top:50%;transform:translateY(-50%);
+  background:var(--card);border:1px solid var(--line);color:var(--cream);font-size:12px;
+  padding:8px 13px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s;
 }
-.part-reasons { list-style:none; display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem; }
-.part-reasons li {
-  display:flex; align-items:flex-start; gap:0.6rem;
-  font-size:0.85rem; color:var(--text); line-height:1.5;
-}
-.part-reasons li span { color:var(--gold); font-size:0.9rem; flex-shrink:0; margin-top:0.05rem; }
-.part-price-box { text-align:center; }
-.part-price-box .amount {
-  font-family:'Bebas Neue',sans-serif; font-size:2.5rem; color:var(--gold); line-height:1;
-}
-.part-price-box .pl { font-size:0.72rem; color:var(--muted); letter-spacing:0.1em; margin-top:0.2rem; }
-.part-price-box .note { font-size:0.78rem; color:var(--text); margin-top:0.5rem; line-height:1.5; }
+.wa:hover::after{opacity:1}
 
-/* ═══════ MAP ═══════ */
-.map-box {
-  background:var(--card); border-radius:4px; overflow:hidden;
-  border:1px solid rgba(212,168,67,0.12); margin-top:2.5rem;
-  display:grid; grid-template-columns:1fr 1.2fr; min-height:220px;
-}
-.map-info { padding:2rem; display:flex; flex-direction:column; justify-content:center; gap:1rem; }
-.map-detail { display:flex; gap:0.75rem; align-items:flex-start; font-size:0.88rem; color:var(--text); }
-.map-detail .mi { font-size:1.2rem; flex-shrink:0; }
-.map-embed { position:relative; min-height:220px; background:var(--card); }
-.map-embed iframe { width:100%; height:100%; border:0; filter:grayscale(40%) brightness(0.8); min-height:220px; display:block; }
+/* ---------- i18n + reveal ---------- */
+[data-en]{display:none}
+html[lang="en"] [data-pt]{display:none}
+html[lang="en"] [data-en]{display:revert}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
 
-/* ═══════ FORM ═══════ */
-.form-wrap {
-  background:var(--card); border-radius:4px;
-  border:1px solid rgba(212,168,67,0.12);
-  overflow:hidden; margin-top:2.5rem;
+/* ---------- responsivo ---------- */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .g3,.g2,.tiers,.revs{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .brand-txt{font-size:17px}
+  .brand img{width:38px;height:38px}
+  body{font-size:16px}
+  .hero-meta div{padding-right:18px;margin-right:18px}
 }
-.form-header {
-  background:linear-gradient(135deg, var(--red2), #7B241C);
-  padding:1.5rem 2rem; position:relative; overflow:hidden;
+@media(max-width:520px){
+  .hero-meta{display:grid;grid-template-columns:1fr 1fr}
+  .hero-meta div{border-right:0;padding:12px 0;margin:0}
+  .btn{width:100%}
+  .wa{right:16px;bottom:16px}
 }
-.form-header::after {
-  content:''; position:absolute; inset:0;
-  background:repeating-linear-gradient(45deg,rgba(255,255,255,0.03) 0,rgba(255,255,255,0.03) 1px,transparent 0,transparent 50%);
-  background-size:18px 18px; pointer-events:none;
-}
-.form-header h3 {
-  font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:0.06em;
-  color:#fff; position:relative; z-index:1;
-}
-.form-header p { font-size:0.85rem; color:rgba(255,255,255,0.7); margin-top:0.3rem; position:relative; z-index:1; }
-.form-body { padding:2rem; }
-.form-inner { width:100%; overflow:hidden; border-radius:3px; }
-.form-inner iframe { width:100%; border:0; display:block; }
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
-/* ═══════ CTA BANNER ═══════ */
-.cta-banner {
-  background:linear-gradient(135deg, var(--red2) 0%, #7B241C 100%);
-  padding:4.5rem 1.5rem; text-align:center; position:relative; overflow:hidden;
-}
-.cta-banner::before {
-  content:''; position:absolute; inset:0;
-  background:repeating-linear-gradient(45deg,rgba(255,255,255,0.025) 0,rgba(255,255,255,0.025) 1px,transparent 0,transparent 50%);
-  background-size:20px 20px;
-}
-.cta-banner > * { position:relative; z-index:1; }
-.cta-banner h2 {
-  font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(2.2rem,6vw,3.5rem); letter-spacing:0.04em; color:#fff; margin-bottom:0.5rem;
-}
-.cta-banner p { font-size:1rem; color:rgba(255,255,255,0.75); margin-bottom:2rem; max-width:500px; margin-left:auto; margin-right:auto; }
-.cta-actions { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
 
-/* ═══════ SOCIAL PROOF ═══════ */
-.testi-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:2.5rem; }
-.testi-card {
-  background:var(--card); border-radius:4px; padding:1.75rem;
-  border-top:2px solid var(--gold);
-}
-.testi-stars { color:var(--gold); font-size:0.85rem; margin-bottom:0.75rem; }
-.testi-q {
-  font-family:'Lora',serif; font-style:italic;
-  font-size:0.93rem; color:var(--text); line-height:1.65; margin-bottom:1.2rem;
-}
-.testi-author { display:flex; align-items:center; gap:0.65rem; }
-.testi-av {
-  width:34px; height:34px; border-radius:50%;
-  background:linear-gradient(135deg,var(--red),var(--gold));
-  display:flex; align-items:center; justify-content:center;
-  font-size:0.85rem; font-weight:600; color:#fff; font-family:'Lora',serif;
-  flex-shrink:0;
-}
-.testi-name { font-size:0.82rem; font-weight:500; color:var(--cream); }
-.testi-info { font-size:0.68rem; color:var(--muted); }
+/* ---------- homepage ---------- */
+.g4{grid-template-columns:repeat(4,1fr)}
+.course{text-decoration:none;display:block}
+.c-time{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--gold);line-height:1;display:block;margin-bottom:10px}
+.course h3{margin-bottom:9px}
+.c-more{display:inline-block;margin-top:16px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);border-bottom:1px solid rgba(212,168,67,.45);padding-bottom:2px}
+.course:hover .c-more{color:var(--gold)}
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)}
+.day-h{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:7px}
+.day-n{font-family:'Bebas Neue',sans-serif;font-size:29px;color:var(--cream);letter-spacing:.05em;line-height:1}
+.day-loc{font-size:13px;color:var(--secondary);letter-spacing:.04em;margin-bottom:17px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.slots{list-style:none}
+.slots li{display:flex;align-items:baseline;gap:14px;padding:6px 0;font-size:15px;color:var(--secondary)}
+.slots .t{font-family:'Bebas Neue',sans-serif;font-size:21px;color:var(--gold-light);min-width:64px;letter-spacing:.03em}
+.lvl{display:block;margin-top:15px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.mini{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.8vw,20px)}
+.mini h3{font-size:20px}
+.mini p{font-size:14px}
+.faq details{border-bottom:1px solid var(--line);padding:21px 0}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;font-family:'Lora',Georgia,serif;font-style:italic;font-size:20px;color:var(--cream);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-family:'Bebas Neue',sans-serif;font-size:29px;color:var(--gold);line-height:1;transition:transform .3s;flex-shrink:0}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:13px;color:var(--secondary);font-size:16px;max-width:72ch}
+.note{border-left:2px solid var(--gold);padding:6px 0 6px 22px;margin-top:clamp(26px,3vw,36px);color:var(--secondary);font-size:15px}
+.note b{color:var(--cream);font-weight:500}
+@media(max-width:1000px){.g4{grid-template-columns:1fr 1fr}.days{grid-template-columns:1fr 1fr}.mini{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.g4,.days,.mini{grid-template-columns:1fr}}
 
-/* ═══════ PHONE BAR ═══════ */
-.phone-bar {
-  background:var(--dark); border-top:1px solid rgba(212,168,67,0.1);
-  padding:1.25rem 1.5rem; text-align:center;
-}
-.phone-bar a {
-  display:inline-flex; align-items:center; gap:0.5rem;
-  font-family:'Lora',serif; font-size:1.3rem; color:var(--gold);
-  transition:color 0.2s;
-}
-.phone-bar a:hover { color:var(--gold-l); }
-.phone-bar .ph-label { font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); margin-bottom:0.3rem; }
 
-/* ═══════ FOOTER ═══════ */
-footer {
-  background:var(--dark); border-top:1px solid rgba(255,255,255,0.04);
-  padding:2rem 1.5rem; text-align:center;
+/* ---------- formulario ---------- */
+.form-card{border:1px solid var(--line);background:linear-gradient(160deg,var(--card),var(--surface));padding:clamp(26px,3.6vw,46px);position:relative}
+.form-card::before{content:'';position:absolute;top:-1px;left:-1px;width:44px;height:44px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,22px);margin-bottom:22px}
+.field{display:flex;flex-direction:column}
+.field.full{grid-column:1/-1}
+.field label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--secondary);margin-bottom:9px;font-weight:500}
+.field input,.field select,.field textarea{
+  background:var(--bg);border:1px solid var(--line);color:var(--cream);
+  font-family:'DM Sans',system-ui,sans-serif;font-size:16px;font-weight:300;
+  padding:13px 15px;transition:border-color .25s;border-radius:0;-webkit-appearance:none;appearance:none;
 }
-.footer-brand {
-  font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:0.08em; color:var(--gold);
-  margin-bottom:0.5rem;
+.field textarea{resize:vertical;line-height:1.6}
+.field select{
+  background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D4A843'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;background-size:20px;padding-right:42px;cursor:pointer;
 }
-.footer-links { display:flex; justify-content:center; gap:1.5rem; margin-top:1rem; flex-wrap:wrap; }
-.footer-links a { font-size:0.78rem; color:var(--muted); transition:color 0.2s; }
-.footer-links a:hover { color:var(--gold); }
-.footer-copy { font-size:0.72rem; color:var(--muted); margin-top:1rem; }
-
-/* ═══════ WHATSAPP FLOAT ═══════ */
-.wa-float {
-  position:fixed; bottom:1.5rem; right:1.5rem; z-index:200;
-  display:flex; align-items:center; gap:0.6rem;
-  background:var(--green); color:#fff;
-  padding:0.7rem 1.1rem 0.7rem 0.85rem; border-radius:50px;
-  box-shadow:0 4px 20px rgba(37,211,102,0.35);
-  font-size:0.78rem; font-weight:500; letter-spacing:0.05em;
-  transition:transform 0.25s, box-shadow 0.25s;
-  animation: fadeUp 1s 0.5s ease both;
-}
-.wa-float:hover { transform:translateY(-3px); box-shadow:0 8px 28px rgba(37,211,102,0.45); }
-.wa-float .wi { font-size:1.25rem; }
-
-/* ═══════ REVEAL ═══════ */
-.reveal { opacity:0; transform:translateY(22px); transition:opacity 0.6s ease, transform 0.6s ease; }
-.reveal.visible { opacity:1; transform:translateY(0); }
-.rd1 { transition-delay:0.1s; }
-.rd2 { transition-delay:0.2s; }
-.rd3 { transition-delay:0.3s; }
-
-/* ═══════ RESPONSIVE ═══════ */
-@media(max-width:700px) {
-  .promos-grid { grid-template-columns:1fr; }
-  .pricing-grid { grid-template-columns:1fr; }
-  .part-box { grid-template-columns:1fr; }
-  .map-box { grid-template-columns:1fr; }
-  .testi-grid { grid-template-columns:1fr; }
-  .wa-float span.wt { display:none; }
-  .wa-float { padding:0.85rem; border-radius:50%; }
-  .hero-actions { flex-direction:column; align-items:center; }
-}
-@media(max-width:480px) {
-  .schedule-table th, .schedule-table td { padding:0.75rem 1rem; }
-}
+.field select option{background:var(--surface);color:var(--cream)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--gold)}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted);opacity:.65}
+.form-err{color:#E8776A;font-size:14px;text-align:center;margin-top:12px}
+/* h1 maior em Tavira */
+h1{font-size:clamp(56px,9vw,116px)}
+.tier.now::before{content:'MAIS ESCOLHIDO'}
+html[lang="en"] .tier.now::before{content:'MOST CHOSEN'}
+@media(max-width:640px){.fgrid{grid-template-columns:1fr}}
 </style>
 </head>
-<body data-lang="pt">
-
-<!-- ── LANG BAR ── -->
-<div class="lang-bar">
-  <div class="lang-logo">ACADEMIA <span>SALSA ALGARVE</span></div>
-  <div class="lang-flags">
-    <button class="flag-btn active" id="btnPT" onclick="setLang('pt')">🇵🇹 PT</button>
-    <button class="flag-btn" id="btnEN" onclick="setLang('en')">🇬🇧 EN</button>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     HERO
-══════════════════════════════════════ -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-pattern"></div>
-  <div class="hero-content">
-    <div class="logo-wrap">
-      <div class="logo-icon">💃</div>
-      <div class="logo-text">
-        <div class="logo-name">Academia de Salsa do Algarve</div>
-        <div class="logo-sub">Associação Bluedance</div>
-      </div>
-    </div>
-
-    <div class="hero-eyebrow pt">📍 Tavira · A partir de Janeiro 2026</div>
-    <div class="hero-eyebrow en">📍 Tavira · Starting January 2026</div>
-
-    <h1 class="pt">Aprende <em>Salsa</em><br>em Tavira</h1>
-    <h1 class="en">Learn <em>Salsa</em><br>in Tavira</h1>
-
-    <p class="hero-subtitle pt">Aulas para iniciantes e intermédios · Ginásio Clube de Tavira</p>
-    <p class="hero-subtitle en">Classes for beginners & intermediates · Ginásio Clube de Tavira</p>
-
-    <p class="hero-desc pt">Não precisas de experiência. Não precisas de par. Começa a dançar e descobre como a Salsa transforma a tua confiança, a tua energia e a tua vida social.</p>
-    <p class="hero-desc en">No experience needed. No partner needed. Start dancing and discover how Salsa transforms your confidence, energy and social life.</p>
-
-    <div class="hero-actions">
-      <a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20nas%20aulas%20de%20Salsa%20em%20Tavira." class="btn btn-red" target="_blank">
-        <span>💬</span>
-        <span class="pt">Inscrever-me agora</span>
-        <span class="en">Sign up now</span>
-      </a>
-      <a href="#horarios" class="btn btn-outline">
-        <span class="pt">Ver Horários ↓</span>
-        <span class="en">View Schedule ↓</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     HORÁRIOS
-══════════════════════════════════════ -->
-<section class="section section-dark" id="horarios">
-  <div class="container">
-    <div class="eyebrow reveal pt">Agenda semanal</div>
-    <div class="eyebrow reveal en">Weekly schedule</div>
-    <h2 class="sh reveal pt">Horário das <em>Aulas</em></h2>
-    <h2 class="sh reveal en">Class <em>Schedule</em></h2>
-    <p class="body-text reveal pt">Aulas regulares semanais, a partir de 1 de Janeiro de 2026. Inscrição aberta a qualquer momento — começas na semana seguinte.</p>
-    <p class="body-text reveal en">Regular weekly classes, starting 1 January 2026. Open enrolment — you can start any week.</p>
-
-    <div class="schedule-wrap reveal">
-      <div class="schedule-card">
-        <div class="schedule-header">
-          <div class="schedule-loc-icon">🏋️</div>
-          <div>
-            <div class="schedule-loc-name">Ginásio Clube de Tavira</div>
-            <div class="schedule-loc-addr">
-              <a href="https://maps.app.goo.gl/QZ6g6UjdCDE5wDcd9" target="_blank">📍 Ver no Google Maps</a>
-            </div>
-          </div>
-        </div>
-        <table class="schedule-table">
-          <thead>
-            <tr>
-              <th class="pt">Dia</th><th class="en">Day</th>
-              <th class="pt">Hora</th><th class="en">Time</th>
-              <th class="pt">Modalidade</th><th class="en">Style</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="day pt">Terça-feira</td>
-              <td class="day en">Tuesday</td>
-              <td class="time">18:00</td>
-              <td class="time" style="display:none"></td>
-              <td><span class="dance-badge db-salsa">🔥 Salsa</span></td>
-              <td style="display:none"></td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="schedule-note">
-          <span>ℹ️</span>
-          <span class="pt">Aulas com duração de 50 minutos. Chegada recomendada 5 minutos antes. Roupa confortável e sapatilhas adequadas.</span>
-          <span class="en">Classes last 50 minutes. Arrive 5 minutes early. Comfortable clothes and appropriate shoes recommended.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     PROMOÇÕES
-══════════════════════════════════════ -->
-<section class="section" id="promocoes">
-  <div class="container">
-    <div class="eyebrow reveal pt">Ofertas especiais</div>
-    <div class="eyebrow reveal en">Special offers</div>
-    <h2 class="sh reveal pt"><em>Promoções</em> exclusivas</h2>
-    <h2 class="sh reveal en">Exclusive <em>Promotions</em></h2>
-    <p class="body-text reveal pt">Aproveita as nossas promoções e traz quem gostas de dançar contigo.</p>
-    <p class="body-text reveal en">Take advantage of our promotions and bring someone to dance with you.</p>
-
-    <div class="promos-grid">
-      <div class="promo-card reveal rd1">
-        <div class="promo-icon">👫</div>
-        <div class="promo-title pt">Desconto Casal</div>
-        <div class="promo-title en">Couples Discount</div>
-        <div class="promo-desc pt">Inscreve-te com o teu par e ambos pagam menos. Aprendam juntos, progridam juntos.</div>
-        <div class="promo-desc en">Sign up as a couple and you both pay less. Learn together, grow together.</div>
-        <div class="promo-tag pt">Fala connosco</div>
-        <div class="promo-tag en">Contact us</div>
-      </div>
-      <div class="promo-card reveal rd2">
-        <div class="promo-icon">🤝</div>
-        <div class="promo-title pt">Traz um Amigo</div>
-        <div class="promo-title en">Bring a Friend</div>
-        <div class="promo-desc pt">Indica um amigo e ambos ganham desconto no mês seguinte. Quanto mais, melhor!</div>
-        <div class="promo-desc en">Refer a friend and you both get a discount next month. The more the merrier!</div>
-        <div class="promo-tag pt">Fala connosco</div>
-        <div class="promo-tag en">Contact us</div>
-      </div>
-      <div class="promo-card reveal rd3">
-        <div class="promo-icon">🆕</div>
-        <div class="promo-title pt">Aula Experimental</div>
-        <div class="promo-title en">Trial Class</div>
-        <div class="promo-desc pt">Nunca dançaste? Experimenta a primeira aula e vê se é para ti. Sem compromisso.</div>
-        <div class="promo-desc en">Never danced? Try the first class and see if it's for you. No commitment.</div>
-        <div class="promo-tag pt">Primeira aula</div>
-        <div class="promo-tag en">First class</div>
-      </div>
-    </div>
-
-    <div style="text-align:center; margin-top:2rem;">
-      <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20mais%20sobre%20as%20promoções%20para%20as%20aulas%20em%20Tavira." class="btn btn-whatsapp reveal" target="_blank">
-        <span>💬</span>
-        <span class="pt">Saber mais sobre promoções</span>
-        <span class="en">Ask about promotions</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     PREÇOS
-══════════════════════════════════════ -->
-<section class="section section-dark" id="precos">
-  <div class="container">
-    <div class="eyebrow reveal pt">Mensalidades</div>
-    <div class="eyebrow reveal en">Pricing</div>
-    <h2 class="sh reveal pt">Preços <em>simples e acessíveis</em></h2>
-    <h2 class="sh reveal en">Simple, <em>affordable pricing</em></h2>
-
-    <div class="pricing-grid">
-      <div class="price-card reveal rd1">
-        <div class="price-label pt">Drop-in · Avulso</div>
-        <div class="price-label en">Drop-in class</div>
-        <div class="price-amount"><sup>€</sup>10</div>
-        <div class="price-per pt">por aula</div>
-        <div class="price-per en">per class</div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li class="pt">Sem compromisso mensal</li>
-          <li class="en">No monthly commitment</li>
-          <li class="pt">Paga só quando vens</li>
-          <li class="en">Pay only when you attend</li>
-        </ul>
-        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20mais%20sobre%20aula%20avulso%20em%20Tavira." class="btn btn-outline price-cta" target="_blank" style="width:100%;justify-content:center;display:flex;">
-          <span class="pt">Inscrever →</span>
-          <span class="en">Sign up →</span>
-        </a>
-      </div>
-
-      <div class="price-card featured reveal rd2" data-label="Mais popular · Most popular">
-        <div class="price-label pt">1 aula / semana</div>
-        <div class="price-label en">1 class / week</div>
-        <div class="price-amount"><sup>€</sup>30</div>
-        <div class="price-per pt">por mês</div>
-        <div class="price-per en">per month</div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li class="pt">4 aulas por mês</li>
-          <li class="en">4 classes per month</li>
-          <li class="pt">Melhor valor/semana</li>
-          <li class="en">Best value per week</li>
-          <li class="pt">Progresso constante</li>
-          <li class="en">Steady progress</li>
-        </ul>
-        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20na%20mensalidade%20de%20Tavira." class="btn btn-gold price-cta" target="_blank" style="width:100%;justify-content:center;display:flex;">
-          <span class="pt">Inscrever →</span>
-          <span class="en">Sign up →</span>
-        </a>
-      </div>
-
-      <!-- Particulares card -->
-      <div class="price-card reveal rd3">
-        <div class="price-label pt">Aulas Particulares</div>
-        <div class="price-label en">Private Lessons</div>
-        <div class="price-amount" style="font-size:1.8rem;margin-top:0.4rem;" class="pt">Sob consulta</div>
-        <div class="price-amount" style="font-size:1.8rem;margin-top:0.4rem;" class="en">On request</div>
-        <div class="price-per" style="margin-top:0.4rem;"><span class="pt">Preço via WhatsApp</span><span class="en">Price via WhatsApp</span></div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li class="pt">Atenção 100% focada</li>
-          <li class="en">100% focused attention</li>
-          <li class="pt">Evolução mais rápida</li>
-          <li class="en">Faster progress</li>
-          <li class="pt">Horário flexível</li>
-          <li class="en">Flexible schedule</li>
-          <li class="pt">Coreografias de casamento</li>
-          <li class="en">Wedding choreography</li>
-        </ul>
-        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20mais%20sobre%20aulas%20particulares%20em%20Tavira." class="btn btn-red price-cta" target="_blank" style="width:100%;justify-content:center;display:flex;">
-          <span>💬 </span>
-          <span class="pt">Pedir preço</span>
-          <span class="en">Request price</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Particulares detail box -->
-    <div class="part-box reveal" style="margin-top:2rem;">
-      <div class="part-info">
-        <div class="eyebrow pt">Aulas privadas</div>
-        <div class="eyebrow en">Private lessons</div>
-        <h3 style="font-family:'Lora',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;" class="pt">Para quem quer <em style="color:var(--gold);">evoluir mais depressa</em></h3>
-        <h3 style="font-family:'Lora',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;" class="en">For those who want to <em style="color:var(--gold);">progress faster</em></h3>
-        <ul class="part-reasons">
-          <li><span>⚡</span><span class="pt">Aprender ao teu próprio ritmo sem esperar pelo grupo</span><span class="en">Learn at your own pace without waiting for the group</span></li>
-          <li><span>💍</span><span class="pt">Preparar coreografia para casamento ou evento especial</span><span class="en">Prepare a choreography for a wedding or special event</span></li>
-          <li><span>🎯</span><span class="pt">Trabalhar pontos específicos — voltas, musicality, estilo</span><span class="en">Work on specific areas — turns, musicality, styling</span></li>
-          <li><span>🕐</span><span class="pt">Horário flexível à medida das tuas disponibilidades</span><span class="en">Flexible schedule tailored to your availability</span></li>
-        </ul>
-      </div>
-      <div class="part-price-box" style="text-align:center;padding:1.5rem;background:var(--dark);border-radius:3px;">
-        <div style="font-size:3rem;margin-bottom:0.5rem;">🤫</div>
-        <p class="body-text pt" style="margin-bottom:1.25rem;">Os preços das aulas particulares são personalizados. Fala connosco no WhatsApp e encontramos a melhor opção para ti.</p>
-        <p class="body-text en" style="margin-bottom:1.25rem;">Private lesson prices are personalised. Talk to us on WhatsApp and we'll find the best option for you.</p>
-        <a href="https://wa.me/351912544500?text=Olá!%20Quero%20saber%20o%20preço%20das%20aulas%20particulares%20de%20Salsa%20em%20Tavira." class="btn btn-whatsapp" target="_blank">
-          <span>💬 </span>
-          <span class="pt">Pedir preço</span>
-          <span class="en">Get a quote</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     PORQUÊ DANÇAR
-══════════════════════════════════════ -->
-<section class="section">
-  <div class="container">
-    <div class="eyebrow reveal pt">Porque aprender</div>
-    <div class="eyebrow reveal en">Why learn to dance</div>
-    <h2 class="sh reveal pt">A Salsa <em>muda-te</em></h2>
-    <h2 class="sh reveal en">Salsa <em>changes you</em></h2>
-    <div class="promos-grid" style="margin-top:2rem;">
-      <div class="promo-card reveal rd1">
-        <div class="promo-icon">🤝</div>
-        <div class="promo-title pt">Conhecer pessoas</div>
-        <div class="promo-title en">Meet people</div>
-        <div class="promo-desc pt">A dança é a forma mais rápida de criar ligações genuínas com pessoas novas em Tavira.</div>
-        <div class="promo-desc en">Dance is the fastest way to build genuine connections with new people in Tavira.</div>
-      </div>
-      <div class="promo-card reveal rd2">
-        <div class="promo-icon">💪</div>
-        <div class="promo-title pt">Ganhar confiança</div>
-        <div class="promo-title en">Build confidence</div>
-        <div class="promo-desc pt">Transforma a forma como te moves e como te sentes no teu próprio corpo.</div>
-        <div class="promo-desc en">Transform the way you move and the way you feel in your own body.</div>
-      </div>
-      <div class="promo-card reveal rd3">
-        <div class="promo-icon">🎵</div>
-        <div class="promo-title pt">Exercício divertido</div>
-        <div class="promo-title en">Fun exercise</div>
-        <div class="promo-desc pt">50 minutos de dança queimam até 400 calorias sem sentires que estás a treinar.</div>
-        <div class="promo-desc en">50 minutes of dance burns up to 400 calories without feeling like a workout.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     DEPOIMENTOS
-══════════════════════════════════════ -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="eyebrow reveal pt">O que dizem os alunos</div>
-    <div class="eyebrow reveal en">What students say</div>
-    <h2 class="sh reveal pt"><em>Histórias</em> reais</h2>
-    <h2 class="sh reveal en"><em>Real</em> stories</h2>
-    <div class="testi-grid">
-      <div class="testi-card reveal rd1">
-        <div class="testi-stars">★★★★★</div>
-        <div class="testi-q pt">"Comecei sem nenhuma experiência e em poucas semanas já dançava salsa com confiança. O Lino é um professor incrível — paciente e muito divertido."</div>
-        <div class="testi-q en">"I started with no experience and within a few weeks I was dancing salsa with confidence. Lino is an incredible teacher — patient and so much fun."</div>
-        <div class="testi-author">
-          <div class="testi-av">A</div>
-          <div><div class="testi-name">Ana S.</div><div class="testi-info">Faro · Salsa</div></div>
-        </div>
-      </div>
-      <div class="testi-card reveal rd2">
-        <div class="testi-stars">★★★★★</div>
-        <div class="testi-q pt">"Vim para Tavira e descobri as aulas de salsa quase por acaso. Já não consigo parar. Em cada aula aprendo algo novo e saio sempre com um sorriso."</div>
-        <div class="testi-q en">"I came to Tavira and discovered the salsa classes almost by chance. I can't stop now. Every class I learn something new and always leave with a smile."</div>
-        <div class="testi-author">
-          <div class="testi-av">R</div>
-          <div><div class="testi-name">Rui M.</div><div class="testi-info">Tavira · Salsa</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     LOCALIZAÇÃO
-══════════════════════════════════════ -->
-<section class="section" id="local">
-  <div class="container">
-    <div class="eyebrow reveal pt">Onde nos encontrar</div>
-    <div class="eyebrow reveal en">Where to find us</div>
-    <h2 class="sh reveal pt">Ginásio Clube <em>de Tavira</em></h2>
-    <h2 class="sh reveal en">Ginásio Clube <em>de Tavira</em></h2>
-
-    <div class="map-box reveal">
-      <div class="map-info">
-        <div class="map-detail">
-          <span class="mi">📍</span>
-          <div>
-            <strong style="color:var(--cream);display:block;margin-bottom:0.2rem;">Ginásio Clube de Tavira</strong>
-            <span class="pt">Tavira, Algarve, Portugal</span>
-            <span class="en">Tavira, Algarve, Portugal</span>
-          </div>
-        </div>
-        <div class="map-detail">
-          <span class="mi">📅</span>
-          <div>
-            <strong style="color:var(--cream);display:block;margin-bottom:0.2rem;" class="pt">Terça-feira</strong>
-            <strong style="color:var(--cream);display:block;margin-bottom:0.2rem;" class="en">Tuesday</strong>
-            <span>18:00 — Salsa</span>
-          </div>
-        </div>
-        <div class="map-detail">
-          <span class="mi">📱</span>
-          <div>
-            <a href="tel:+351912544500" style="color:var(--gold);font-size:1.05rem;font-family:'Lora',serif;">+351 912 544 500</a>
-          </div>
-        </div>
-        <a href="https://maps.app.goo.gl/QZ6g6UjdCDE5wDcd9" target="_blank" class="btn btn-outline" style="margin-top:0.5rem;width:fit-content;">
-          <span>🗺️ </span>
-          <span class="pt">Abrir no Maps</span>
-          <span class="en">Open in Maps</span>
-        </a>
-      </div>
-      <div class="map-embed">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.7!2d-7.6536!3d37.1261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0674b0000000001%3A0x1!2sGin%C3%A1sio+Clube+de+Tavira!5e0!3m2!1spt!2spt!4v1"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Ginásio Clube de Tavira">
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     CTA WHATSAPP
-══════════════════════════════════════ -->
-<div class="cta-banner" id="inscrever">
-  <h2 class="pt">Pronto para começar?</h2>
-  <h2 class="en">Ready to start?</h2>
-  <p class="pt">Não precisas de experiência. Não precisas de par. A tua primeira aula está à espera.</p>
-  <p class="en">No experience needed. No partner needed. Your first class is waiting.</p>
-  <div class="cta-actions">
-    <a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20nas%20aulas%20de%20Salsa%20em%20Tavira%20a%20partir%20de%20Janeiro%202026." class="btn btn-gold" target="_blank">
-      💬 WhatsApp — <span class="pt">Inscrever agora</span><span class="en">Sign up now</span>
+<body>
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="https://algarvedance.com">
+      <img src="data:image/png;base64,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" alt="Academia de Salsa do Algarve">
+      <span class="brand-txt">Algarve Dance<small>Tavira</small></span>
     </a>
-    <a href="tel:+351912544500" class="btn btn-ghost-white" style="border:1px solid rgba(255,255,255,0.35);color:#fff;">
-      📞 +351 912 544 500
-    </a>
+    <div class="nav-links">
+      <a href="#horario"><span data-pt>Horário</span><span data-en>Timetable</span></a>
+      <a href="#promos"><span data-pt>Promoções</span><span data-en>Offers</span></a>
+      <a href="#precos"><span data-pt>Preços</span><span data-en>Prices</span></a>
+      <a href="#onde"><span data-pt>Onde</span><span data-en>Where</span></a>
+      <a href="#inscricao"><span data-pt>Inscrição</span><span data-en>Sign up</span></a>
+    </div>
+    <div class="lang"><button data-l="pt">PT</button><button data-l="en">EN</button></div>
   </div>
-  <p style="margin-top:1.5rem;font-size:0.75rem;color:rgba(255,255,255,0.45);" class="pt">Ou preenche o formulário abaixo ↓</p>
-  <p style="margin-top:1.5rem;font-size:0.75rem;color:rgba(255,255,255,0.45);" class="en">Or fill in the form below ↓</p>
-</div>
+</nav>
 
-<!-- ══════════════════════════════════════
-     FORMULÁRIO
-══════════════════════════════════════ -->
-<section class="section section-dark" id="formulario">
-  <div class="container">
-    <div class="eyebrow reveal pt">Inscrição online</div>
-    <div class="eyebrow reveal en">Online registration</div>
-    <h2 class="sh reveal pt">Formulário de <em>Inscrição</em></h2>
-    <h2 class="sh reveal en"><em>Registration</em> Form</h2>
-    <p class="body-text reveal pt">Preenche o formulário e entraremos em contacto para confirmar a tua inscrição.</p>
-    <p class="body-text reveal en">Fill in the form and we'll get in touch to confirm your registration.</p>
-
-    <div class="form-wrap reveal">
-      <div class="form-header">
-        <h3 class="pt">Inscreve-te nas aulas de Salsa em Tavira</h3>
-        <h3 class="en">Sign up for Salsa classes in Tavira</h3>
-        <p class="pt">Terças às 18:00 · Ginásio Clube de Tavira · A partir de Janeiro 2026</p>
-        <p class="en">Tuesdays at 18:00 · Ginásio Clube de Tavira · From January 2026</p>
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span data-pt>Academia de Salsa do Algarve · Tavira</span><span data-en>Academia de Salsa do Algarve · Tavira</span></span>
+      <h1><span data-pt>Aprende Salsa</span><span data-en>Learn Salsa</span><br><span data-pt>em </span><span data-en>in </span><span class="accent">Tavira</span></h1>
+      <p class="hero-sub"><span data-pt>Terças às 18h00, no Ginásio Clube de Tavira. Dois grupos na mesma sala — um para quem começa, outro para quem já dança.</span><span data-en>Tuesdays at 6pm, at Ginásio Clube de Tavira. Two groups in the same room — one for beginners, one for those who already dance.</span></p>
+      <p class="lede"><span data-pt>Não precisas de experiência nem de levar par. Trocamos de par ao longo da aula, que é como se aprende a dançar com toda a gente e não só com uma pessoa.</span><span data-en>No experience needed and no partner needed. We rotate partners during class, which is how you learn to dance with everyone and not just one person.</span></p>
+      <div class="hero-meta">
+        <div><div class="k">18h00</div><div class="v"><span data-pt>Terças</span><span data-en>Tuesdays</span></div></div>
+        <div><div class="k">2</div><div class="v"><span data-pt>Grupos</span><span data-en>Groups</span></div></div>
+        <div><div class="k">50 MIN</div><div class="v"><span data-pt>Por aula</span><span data-en>Per class</span></div></div>
+        <div><div class="k">8 SET</div><div class="v"><span data-pt>Retoma</span><span data-en>Back on</span></div></div>
       </div>
-      <div class="form-body">
-        <div class="form-inner">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfGPslc-38BgJbpbWPnk24E1N0oI6PkQl7vO8VFGLM9IFsYIQ/viewform?embedded=true"
-            width="100%"
-            height="1538"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Formulário de inscrição - Academia de Salsa do Algarve - Tavira">
-            A carregar…
-          </iframe>
-        </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20salsa%20em%20Tavira."><span data-pt>Aula experimental grátis</span><span data-en>Free trial class</span></a>
+        <a class="btn btn-ghost" href="#horario"><span data-pt>Ver horário</span><span data-en>See timetable</span></a>
+      </div>
+      <p class="btn-sub"><span data-pt>Sem par · sem experiência · sem compromisso</span><span data-en>No partner · no experience · no commitment</span></p>
+    </div>
+
+    <aside class="hero-card rv">
+      <div class="hc-label"><span data-pt>Mensalidade</span><span data-en>Monthly</span></div>
+      <div class="hc-price">30<sup>€</sup></div>
+      <div class="hc-note"><span data-pt>4 aulas por mês · 7,50 € por aula</span><span data-en>4 classes a month · €7.50 per class</span></div>
+      <div class="hc-rule"></div>
+      <div class="hc-row"><span><span data-pt>1 aula por semana</span><span data-en>1 class a week</span></span><b>30 €</b></div>
+      <div class="hc-row"><span><span data-pt>Avulso · drop-in</span><span data-en>Drop-in</span></span><b>10 €</b></div>
+      <div class="hc-row"><span><span data-pt>Aula experimental</span><span data-en>Trial class</span></span><b><span data-pt>Grátis</span><span data-en>Free</span></b></div>
+      <div class="hc-row"><span><span data-pt>Aulas particulares</span><span data-en>Private lessons</span></span><b><span data-pt>Sob consulta</span><span data-en>On request</span></b></div>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ HORÁRIO ============ -->
+<section id="horario" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Ginásio Clube de Tavira</span><span data-en>Ginásio Clube de Tavira</span></span>
+      <h2><span data-pt>Uma noite</span><span data-en>One night</span> <em><span data-pt>por semana</span><span data-en>a week</span></em></h2>
+      <p class="lede"><span data-pt>As aulas retomam na terça, 8 de setembro. A inscrição está aberta a qualquer momento — entras na semana seguinte.</span><span data-en>Classes are back on Tuesday, 8 September. Sign-up is open at any time — you start the following week.</span></p>
+    </div>
+    <div class="grid g2">
+      <article class="card rv">
+        <div class="day-h"><span class="day-n"><span data-pt>TERÇA</span><span data-en>TUESDAY</span></span><span class="badge b-salsa">Salsa</span></div>
+        <p class="day-loc">Ginásio Clube de Tavira</p>
+        <ul class="slots">
+          <li><span class="t">18h00</span><span><span data-pt>Grupo de iniciados</span><span data-en>Beginners group</span></span></li>
+          <li><span class="t">18h00</span><span><span data-pt>Grupo de intermédios</span><span data-en>Intermediate group</span></span></li>
+        </ul>
+        <span class="lvl"><span data-pt>Aulas de 50 minutos · chega 5 minutos antes</span><span data-en>50-minute classes · arrive 5 minutes early</span></span>
+      </article>
+      <article class="card rv">
+        <h3><span data-pt>Dois grupos, a mesma hora</span><span data-en>Two groups, same hour</span></h3>
+        <p><span data-pt>Os dois grupos funcionam em simultâneo na mesma sala, cada um com o seu nível. Quem nunca dançou não fica preso atrás de quem já sabe, e quem já dança não perde tempo a rever o básico.</span><span data-en>Both groups run at the same time in the same room, each at its own level. People who have never danced don't get stuck behind those who already know, and those who dance don't waste time revisiting the basics.</span></p>
+        <p style="margin-top:14px"><span data-pt>Não sabes em qual entras? Nós dizemos-te na primeira aula.</span><span data-en>Not sure which one you belong in? We'll tell you in your first class.</span></p>
+        <span class="tag"><span data-pt>Iniciados e intermédios</span><span data-en>Beginners and intermediates</span></span>
+      </article>
+    </div>
+    <p class="note rv"><span data-pt>Leva roupa confortável e sapatilhas de sola lisa — as solas de borracha agarram ao chão e não deixam rodar.</span><span data-en>Bring comfortable clothes and smooth-soled shoes — rubber soles grip the floor and stop you from turning.</span></p>
+  </div>
+</section>
+
+<!-- ============ PROMOÇÕES ============ -->
+<section id="promos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Promoções</span><span data-en>Offers</span></span>
+      <h2><span data-pt>Traz quem gostas de</span><span data-en>Bring the people you</span> <em><span data-pt>ter por perto</span><span data-en>like to be around</span></em></h2>
+      <p class="lede"><span data-pt>Dançar é melhor acompanhado — e sai mais barato.</span><span data-en>Dancing is better with company — and it costs less.</span></p>
+    </div>
+    <div class="grid g3">
+      <a class="card course rv" href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20promo%C3%A7%C3%B5es%20das%20aulas%20em%20Tavira.">
+        <span class="num">01</span>
+        <h3><span data-pt>Aula experimental</span><span data-en>Trial class</span></h3>
+        <p><span data-pt>Nunca dançaste? Vem a uma aula, experimenta e só depois decides. Não pagas nada e não te comprometes a nada.</span><span data-en>Never danced? Come to one class, try it, and only then decide. You pay nothing and commit to nothing.</span></p>
+        <span class="c-more"><span data-pt>Marcar a primeira aula →</span><span data-en>Book my first class →</span></span>
+      </a>
+      <a class="card course rv" href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20promo%C3%A7%C3%B5es%20das%20aulas%20em%20Tavira.">
+        <span class="num">02</span>
+        <h3><span data-pt>Desconto de casal</span><span data-en>Couple discount</span></h3>
+        <p><span data-pt>Inscrevem-se os dois ao mesmo tempo e ambos pagam menos. Aprendem juntos, progridem ao mesmo ritmo.</span><span data-en>Sign up together and you both pay less. You learn together and progress at the same pace.</span></p>
+        <span class="c-more"><span data-pt>Falar connosco →</span><span data-en>Talk to us →</span></span>
+      </a>
+      <a class="card course rv" href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20promo%C3%A7%C3%B5es%20das%20aulas%20em%20Tavira.">
+        <span class="num">03</span>
+        <h3><span data-pt>Traz um amigo</span><span data-en>Bring a friend</span></h3>
+        <p><span data-pt>Indicas alguém que se inscreva e os dois ganham desconto no mês seguinte. Quantos mais forem, melhor fica a turma.</span><span data-en>Refer someone who signs up and you both get a discount the following month. The more people, the better the class.</span></p>
+        <span class="c-more"><span data-pt>Falar connosco →</span><span data-en>Talk to us →</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREÇOS ============ -->
+<section id="precos" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Mensalidades</span><span data-en>Fees</span></span>
+      <h2><span data-pt>Preços</span><span data-en>Simple,</span> <em><span data-pt>simples</span><span data-en>clear prices</span></em></h2>
+      <p class="lede"><span data-pt>Sem contratos, sem fidelização. Pagas o mês ou pagas a aula.</span><span data-en>No contracts, no lock-in. Pay by the month or pay by the class.</span></p>
+    </div>
+    <div class="tiers">
+      <div class="tier rv">
+        <div class="t-n"><span data-pt>Avulso</span><span data-en>Drop-in</span></div>
+        <div class="t-d"><span data-pt>Sem compromisso</span><span data-en>No commitment</span></div>
+        <div class="t-p">10<sup>€</sup></div>
+        <div class="t-u"><span data-pt>por aula</span><span data-en>per class</span></div>
+        <ul>
+          <li><span><span data-pt>Pagas só quando vens</span><span data-en>Pay only when you come</span></span></li>
+          <li><span><span data-pt>Sem mensalidade</span><span data-en>No monthly fee</span></span></li>
+        </ul>
+      </div>
+      <div class="tier rv now">
+        <div class="t-n"><span data-pt>Mensalidade</span><span data-en>Monthly</span></div>
+        <div class="t-d"><span data-pt>1 aula por semana</span><span data-en>1 class a week</span></div>
+        <div class="t-p">30<sup>€</sup></div>
+        <div class="t-u"><span data-pt>por mês · 4 aulas</span><span data-en>a month · 4 classes</span></div>
+        <ul>
+          <li><span><span data-pt>Por aula</span><span data-en>Per class</span></span><b>7,50 €</b></li>
+          <li><span><span data-pt>Progresso constante</span><span data-en>Steady progress</span></span></li>
+        </ul>
+      </div>
+      <div class="tier rv">
+        <div class="t-n"><span data-pt>Particulares</span><span data-en>Private</span></div>
+        <div class="t-d"><span data-pt>Só tu e o professor</span><span data-en>Just you and the teacher</span></div>
+        <div class="t-p" style="font-size:clamp(28px,3.6vw,38px)"><span data-pt>Sob consulta</span><span data-en>On request</span></div>
+        <div class="t-u"><span data-pt>preço via WhatsApp</span><span data-en>price via WhatsApp</span></div>
+        <ul>
+          <li><span><span data-pt>Horário flexível</span><span data-en>Flexible schedule</span></span></li>
+          <li><span><span data-pt>Coreografias de casamento</span><span data-en>Wedding choreography</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid g2 rv" style="margin-top:clamp(34px,4.4vw,52px)">
+      <div class="obj">
+        <div class="q"><span data-pt>Para quem são as aulas particulares?</span><span data-en>Who are private lessons for?</span></div>
+        <div class="a"><span data-pt>Para quem quer avançar mais depressa do que o grupo, preparar uma coreografia de casamento, ou trabalhar uma coisa específica — voltas, musicalidade, estilo.</span><span data-en>For anyone who wants to move faster than the group, prepare a wedding choreography, or work on something specific — turns, musicality, styling.</span></div>
+      </div>
+      <div class="obj">
+        <div class="q"><span data-pt>Posso começar a meio do mês?</span><span data-en>Can I start mid-month?</span></div>
+        <div class="a"><span data-pt>Podes. A inscrição está aberta a qualquer altura e começas na terça seguinte. Não há turmas fechadas em Tavira.</span><span data-en>You can. Sign-up is open at any time and you start the following Tuesday. There are no closed intakes in Tavira.</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
-     PHONE BAR
-══════════════════════════════════════ -->
-<div class="phone-bar">
-  <div class="ph-label pt">Contacto directo</div>
-  <div class="ph-label en">Direct contact</div>
-  <a href="tel:+351912544500">📞 +351 912 544 500</a>
-</div>
+<!-- ============ PORQUÊ ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Porque aprender</span><span data-en>Why learn</span></span>
+      <h2><span data-pt>O que a salsa</span><span data-en>What salsa</span> <em><span data-pt>te muda</span><span data-en>changes in you</span></em></h2>
+    </div>
+    <div class="grid g3">
+      <article class="card rv">
+        <h3><span data-pt>Conhecer pessoas</span><span data-en>Meet people</span></h3>
+        <p><span data-pt>Em Tavira, é a forma mais rápida de criar ligações reais com gente nova. Ninguém sai de uma aula sem ter falado com meia dúzia de pessoas.</span><span data-en>In Tavira, it's the fastest way to build real connections with new people. Nobody leaves a class without having talked to half a dozen people.</span></p>
+      </article>
+      <article class="card rv">
+        <h3><span data-pt>Ganhar confiança</span><span data-en>Gain confidence</span></h3>
+        <p><span data-pt>Muda a forma como te moves e como te sentes no teu próprio corpo. E isso não fica na sala de dança.</span><span data-en>It changes the way you move and how you feel in your own body. And that doesn't stay in the dance room.</span></p>
+      </article>
+      <article class="card rv">
+        <h3><span data-pt>Exercício que não parece</span><span data-en>Exercise that doesn't feel like it</span></h3>
+        <p><span data-pt>Cinquenta minutos de salsa passam sem dares por eles. É treino sem a parte chata do treino.</span><span data-en>Fifty minutes of salsa go by without you noticing. It's training without the boring part of training.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
 
-<!-- ══════════════════════════════════════
-     FOOTER
-══════════════════════════════════════ -->
+<!-- ============ TESTEMUNHOS ============ -->
+<section style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>O que dizem os alunos</span><span data-en>What students say</span></span>
+      <h2><span data-pt>Histórias</span><span data-en>Real</span> <em><span data-pt>reais</span><span data-en>stories</span></em></h2>
+    </div>
+    <div class="grid g2">
+      <article class="rev rv">
+        <div class="stars">★★★★★</div>
+        <blockquote><span data-pt>"Comecei sem nenhuma experiência e em poucas semanas já dançava salsa com confiança. O Lino é um professor incrível — paciente e muito divertido."</span><span data-en>"I started with no experience at all and within a few weeks I was dancing salsa with confidence. Lino is an incredible teacher — patient and great fun."</span></blockquote>
+        <div class="who"><b>Ana S.</b>Salsa</div>
+      </article>
+      <article class="rev rv">
+        <div class="stars">★★★★★</div>
+        <blockquote><span data-pt>"Vim para Tavira e descobri as aulas de salsa quase por acaso. Já não consigo parar. Em cada aula aprendo algo novo e saio sempre com um sorriso."</span><span data-en>"I moved to Tavira and found the salsa classes almost by accident. Now I can't stop. Every class I learn something new and I always leave smiling."</span></blockquote>
+        <div class="who"><b>Rui M.</b>Tavira · Salsa</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ONDE ============ -->
+<section id="onde">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Onde nos encontrar</span><span data-en>Where to find us</span></span>
+      <h2><span data-pt>Ginásio Clube</span><span data-en>Ginásio Clube</span> <em><span data-pt>de Tavira</span><span data-en>de Tavira</span></em></h2>
+    </div>
+    <div class="grid g3">
+      <article class="card rv">
+        <h3><span data-pt>Morada</span><span data-en>Address</span></h3>
+        <p>Ginásio Clube de Tavira<br>Tavira · Algarve</p>
+        <a class="maps-link" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio+Clube+de+Tavira" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span data-pt>Abrir no mapa</span><span data-en>Open in maps</span></a>
+      </article>
+      <article class="card rv">
+        <h3><span data-pt>Quando</span><span data-en>When</span></h3>
+        <p><span data-pt>Terças, 18h00 — dois grupos, iniciados e intermédios. A retomar a 8 de setembro de 2026.</span><span data-en>Tuesdays, 6pm — two groups, beginners and intermediates. Back on 8 September 2026.</span></p>
+      </article>
+      <article class="card rv">
+        <h3><span data-pt>Contacto</span><span data-en>Contact</span></h3>
+        <p><a href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20salsa%20em%20Tavira.">WhatsApp · 912 544 500</a><br><a href="mailto:geral@salsa-algarve.com">geral@salsa-algarve.com</a></p>
+        <span class="tag"><span data-pt>Resposta em 24 h</span><span data-en>Reply within 24 h</span></span>
+      </article>
+    </div>
+    <p class="note rv"><b>Orgulhe Dance Festival</b> — <span data-pt>o nosso festival acontece em Tavira e na Ilha de Tavira. Próxima edição: 10 a 13 de junho de 2027.</span><span data-en>our festival takes place in Tavira and on Ilha de Tavira. Next edition: 10–13 June 2027.</span> <a class="maps-link" href="https://orgulhe.algarvedance.com"><span data-pt>Saber mais</span><span data-en>Learn more</span></a></p>
+  </div>
+</section>
+
+<!-- ============ INSCRIÇÃO ============ -->
+<section id="inscricao" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Inscrição</span><span data-en>Sign up</span></span>
+      <h2><span data-pt>Começa</span><span data-en>Start</span> <em><span data-pt>na próxima terça</span><span data-en>next Tuesday</span></em></h2>
+      <p class="lede"><span data-pt>Preenche os teus dados e abre-se o WhatsApp com a mensagem pronta. Respondemos em menos de 24 horas.</span><span data-en>Fill in your details and WhatsApp opens with the message ready. We reply within 24 hours.</span></p>
+    </div>
+
+    <div class="form-card rv">
+      <div class="fgrid">
+        <div class="field">
+          <label for="f-nome"><span data-pt>Nome</span><span data-en>Name</span></label>
+          <input id="f-nome" type="text" autocomplete="name" placeholder="Maria Silva">
+        </div>
+        <div class="field">
+          <label for="f-tel"><span data-pt>Telefone / WhatsApp</span><span data-en>Phone / WhatsApp</span></label>
+          <input id="f-tel" type="tel" autocomplete="tel" placeholder="912 345 678">
+        </div>
+        <div class="field">
+          <label for="f-nivel"><span data-pt>Já dançaste salsa?</span><span data-en>Have you danced salsa before?</span></label>
+          <select id="f-nivel">
+            <option value="">—</option>
+            <option value="Nunca dancei" data-pt-opt="Nunca dancei" data-en-opt="Never danced">Nunca dancei</option>
+            <option value="Já dancei um pouco" data-pt-opt="Já dancei um pouco" data-en-opt="I've danced a little">Já dancei um pouco</option>
+            <option value="Intermédio" data-pt-opt="Já danço, quero o grupo intermédio" data-en-opt="I dance already, I want the intermediate group">Já danço, quero o grupo intermédio</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-int"><span data-pt>O que te interessa</span><span data-en>What you're after</span></label>
+          <select id="f-int">
+            <option value="">—</option>
+            <option value="Aula experimental gratis" data-pt-opt="Aula experimental grátis" data-en-opt="Free trial class">Aula experimental grátis</option>
+            <option value="Mensalidade 30 EUR" data-pt-opt="Mensalidade — 30 €/mês" data-en-opt="Monthly — €30/month">Mensalidade — 30 €/mês</option>
+            <option value="Avulso 10 EUR" data-pt-opt="Avulso — 10 €/aula" data-en-opt="Drop-in — €10/class">Avulso — 10 €/aula</option>
+            <option value="Desconto de casal" data-pt-opt="Desconto de casal" data-en-opt="Couple discount">Desconto de casal</option>
+            <option value="Aulas particulares" data-pt-opt="Aulas particulares" data-en-opt="Private lessons">Aulas particulares</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="f-msg"><span data-pt>Mensagem (opcional)</span><span data-en>Message (optional)</span></label>
+          <textarea id="f-msg" rows="3" placeholder="..."></textarea>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="f-send" type="button" style="width:100%;margin-top:8px">
+        <span data-pt>Quero inscrever-me →</span><span data-en>I want to sign up →</span>
+      </button>
+      <p class="btn-sub" style="text-align:center"><span data-pt>Abre o WhatsApp com a mensagem escrita. Os teus dados são usados apenas para responder ao teu pedido.</span><span data-en>Opens WhatsApp with the message written. Your details are used only to answer your request.</span></p>
+      <p class="form-err" id="f-err" hidden><span data-pt>Falta o nome ou o telefone.</span><span data-en>Name or phone is missing.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Dúvidas</span><span data-en>Questions</span></span>
+      <h2><span data-pt>Perguntas que toda a</span><span data-en>What everyone</span> <em><span data-pt>gente faz</span><span data-en>asks</span></em></h2>
+    </div>
+    <div class="faq rv">
+      <details><summary><span data-pt>Preciso de levar par?</span><span data-en>Do I need a partner?</span></summary>
+        <p><span data-pt>Não. Trocamos de par ao longo da aula. A maior parte das pessoas vem sozinha e é assim que se conhece toda a gente.</span><span data-en>No. We rotate partners during class. Most people come alone, and that's how you get to know everyone.</span></p></details>
+      <details><summary><span data-pt>Em que grupo é que eu entro?</span><span data-en>Which group do I join?</span></summary>
+        <p><span data-pt>Se nunca dançaste, entras no grupo de iniciados. Se já tens base, no de intermédios. Na dúvida, aparece e nós dizemos-te na primeira aula.</span><span data-en>If you've never danced, you join the beginners group. If you have a base, the intermediate one. If in doubt, just show up and we'll tell you in your first class.</span></p></details>
+      <details><summary><span data-pt>Tenho de pagar o mês inteiro para experimentar?</span><span data-en>Do I have to pay a full month to try?</span></summary>
+        <p><span data-pt>Não. A primeira aula é experimental e não pagas nada. Depois escolhes entre mensalidade de 30 € ou 10 € por aula avulsa.</span><span data-en>No. Your first class is a free trial. After that you choose between €30 a month or €10 per drop-in class.</span></p></details>
+      <details><summary><span data-pt>Sou completamente descoordenado.</span><span data-en>I'm completely uncoordinated.</span></summary>
+        <p><span data-pt>Toda a gente diz isso na primeira aula. Coordenação não é um dom, é uma coisa que se treina — e o grupo de iniciados existe exatamente para isso.</span><span data-en>Everyone says that in their first class. Coordination isn't a gift, it's something you train — and the beginners group exists for exactly that.</span></p></details>
+      <details><summary><span data-pt>O que devo levar?</span><span data-en>What should I bring?</span></summary>
+        <p><span data-pt>Roupa confortável, água e sapatilhas de sola lisa. Chega cinco minutos antes das 18h.</span><span data-en>Comfortable clothes, water and smooth-soled shoes. Arrive five minutes before 6pm.</span></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap">
+    <h2><span data-pt>A tua primeira aula está à espera.</span><span data-en>Your first class is waiting.</span></h2>
+    <p><span data-pt>Terças às 18h00, Ginásio Clube de Tavira. A primeira é por nossa conta.</span><span data-en>Tuesdays at 6pm, Ginásio Clube de Tavira. The first one is on us.</span></p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-primary" href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20salsa%20em%20Tavira."><span data-pt>Marcar aula experimental</span><span data-en>Book my trial class</span></a>
+      <a class="btn btn-ghost" href="#precos" style="border-color:rgba(255,255,255,.4);color:#fff"><span data-pt>Ver preços</span><span data-en>See prices</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
 <footer>
-  <div class="footer-brand">Academia de Salsa do Algarve</div>
-  <p style="font-size:0.82rem;color:var(--muted);margin-top:0.3rem;" class="pt">Aulas de Salsa em Tavira · Ginásio Clube de Tavira · Terças 18:00</p>
-  <p style="font-size:0.82rem;color:var(--muted);margin-top:0.3rem;" class="en">Salsa classes in Tavira · Ginásio Clube de Tavira · Tuesdays 18:00</p>
-  <div class="footer-links">
-    <a href="https://www.salsa-algarve.com" target="_blank">salsa-algarve.com</a>
-    <a href="https://wa.me/351912544500" target="_blank">WhatsApp</a>
-    <a href="mailto:geral@salsa-algarve.com">geral@salsa-algarve.com</a>
-    <a href="https://www.instagram.com/salsa_algarve" target="_blank">@salsa_algarve</a>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAAwFBMVEXv3+Cio6rgnaJcXmng4OCxIC/x7/Ds6uvKYWsjJTR4eoXKEia2T1m5usO0N0WxsbLVeoV9fX3lvMPJOEk9QEwqLEG+wcd+gInxsrLrt+2Ifoivr/Wq/6q63NwAAP8A/wB/FyB/P39BPUlmZplVqqp//39///+qVVW/f7//AAD/AP//f////7/wxb/19PIAAADPFinx6+0UFygICRj+/v6zFiclJzTHyM1HSFQ2OEaGh5DV1dqnqK8LDCIPER1naHLb8ljGAAAAQHRSTlPw/v7+IP6gW/7+/v7+/v4E/gL+/v7+/v4FBv4FAwcBAf4E/gUDAgIDBAEBAgT//gD+/v7+Av7+/v7+/v7+/v7+1NJZvgAAKGpJREFUeNrdfQd74ziSNiAoUbIs252mZ+++nINkgBJz+P//6lAIJEgCDCLlmT3usz3dNkWxXlSuQgFdv/a68euPf7nZfwHXf/jiF0JfSfuZEyj++o810LpWl/jbbwOI99u/NwDE2sq/rte73W7LL2Rc8O8t/zkHovOBf3oAKlrWQDsn/NJzIcBhvT6LT76fz7d/egAk8evbeoj0Ngwcrvfq8/+cAFQrz9fdRjvVf9AeFOA5788EAT2XeE59RTynk9IR62/eBCCoB/5TAaAYn1PfWvCayDQNf55whjH//+lnGKYNcCit/ok4BufnCQN6EvX/aCx9RRsKMU5ISb7HQeAxeRXwhxd4cUTKBGccijYnIMUIz8AAPYX8myH1mpwwS8ooDljhN66CNf/NAi8iv3CIOioBMFgegmUBuL2/S7lvMn3KV52TrihkQQyLTQ6/kgTDlSTJgf87Anj0TV5MDlnYVBlot/7Pi2sDtOjiS+q1ehf/RdmBxJKsglPFmRy35L0WfBSeMnwg3xVWRRARnDYYabv7x8JsgJbl/fXOZF2aYuIxydhRmWThOE+AfwyXUaA/mJyowU9ISMJyHhJacPXP64a9D5MokDR0udlBufkPITcShJhktCEJ8IV/KwDk4m+b1Hvw8l50yNLLoxc9JSQoBAYlpqYkrJcShCUAuPEVOZvkc84PcrH0WK08fYB4zfNZKRiBRUlY29Tt7p0Lwv/+WwDA5fFftd6HlzsRDxYtqBXYjEsueyaFIZCiUHPBH7e/GoAbXwbO/dva2cURvKqnqKeXhS6OAcgCi5Ma1e16AVWA5gv/rWZ+lMTiLQ/hotRrwRLYBmX98N18CNBcy/dHbfjSQwySTzJ0GRn3TNUIpzLI8zwgJw0BEtrwrwJA6P5tTT5YbnN9nnFxHmMA8kl/yXY3zzlEs5SfQX7C18YPDunl2ZfQMjkjoaEKbu9/AQBnbvqqeC8Box8kzydfQ5D7rEwrz+i/Pq4JHgQAErf18mcxy9l08inh10OWkeKYsTxIdI5l+7hFfBiAq1x+/vU/CQPFlE6WfAyuIn6UCzz+rXFWMcH5uv5CAPjy7/SbHIRSCoc0H6Un3LqhLAKPkYcF4RfXOrUq2D5oDtBj2h/Yn0ru56sY4eHoBnMb0bwtDURC6PSwyUhLYL2kChMf8gnQI9rvqrUfKkEUMR0R3SU+85PGb/lP+OWXM9Qh14ZFEZ20W/QIAujB5ZfKD9aQpGOC28uJ39tgdxoxFhHGvPBRFqBCDgrGDjpCWk9HAD1OPy0L5ldqyLpApGZ6FOcsNinFfPXxif9BZtnEkOQsj8JKEUxNlaDJ9Gv2P8WchUvUy58mcfxF2U9jsUtuOdNLVMCf01IlrSsBJlBIo8l5AjRR+1+19k8YK4Ks79UikPHKX7scctCCdao7EOKPfa+lGh5gAv5NBVFLMdUzngTAHzX7k6LwSe/S0Zh5porLBLfrJDmnXCwbv4vFaAb1VJpiLownJQa367MAqMU/jP2CDSyctHI1f8O/o5pfIi4RJSnLH9yO4FkMAM/E3BXXYgCK4CkAcPqRXky/8LCD/bFSi6Gw8v7B1PocDvWZk/wtlAlYHs8PHlPi51rjTDIG6AH6f3HtT5AjccMtcym84kwWvjykaS45sZmuCcM/IPUvIXCbkhDTkVwAYkDkl3FVuF4agNta0s8tLn/34uB4jQzo8UE5XnDOfsSsUnxc6guWJ+q+lP8mgFioLLkrwCKnJWF+NJY9uFfix6FGYKwmQNPWn786CC92FvVjydqcCQ4+izgXFLGujXKuz4kqGXEnQIvshfj13zuK1A/8bLQ14K5GgLVffF6SA8D8V+qPBSc3J0r/1uNMwOkiYOYr4iiP3zyFBv+lUo+cawq3M8QN3GgA6AWRXH8d3Y20hiMB0PSfggLYbEj3+x4DG0jA2OUVD8NS/xSJfcxlnxjL7Puhy8QHU7wEanDT7roYAPX68yC8iPodN+J7eRTJOAcLM1+xAPhOUiPgiJCajaBPIh3RLjLm4qqQ/akRWC8FgKQfFDv3fqgjLLnU1i9OE5Yzj1PLWSCo1jrz58V+o66kMr1olDVEo/SfNv+FX9roxzGu/fWSO7cYYpQ8CIXHW/nDaUQSPMa7n+UUcf1aTEAAjeB/Zf8za/BOhRtW6QUqXJxY/DSgIuqvWeAJRFtEBExPORoBNNr+SV/eQgQYcjOg4YoImF/5MGHgF4Ypp8sut/WJmckD55kAVP5/FhRFl34wPaDwDtT8fs83PJvSq525hVmA4uxk80hBVpORXjEaEgBFP9g/mwILuclv+THc6feMnzSZdEkIcMwKFifU4pAy7XRuzwPuABoq/m0VnXYFnnH6fQ83SQPjT56t7cGblMbW5isrT5P/ZjvgEPUC8K4dgJSHv4R2lw/8Pl84BtQocVDukrKwDv2fhIDgPfA6bQgkTEdeAy5hHwC3s6KfRg1FVjn+QvwFMCm/I6n94WJupm9M7MO97B9ZFjsSyzwUUenWfpcQjQmAOaEx6i5lGhSeTOfgACShYpE0cJcKltMAhfB40lj4/93l4UGrJ/3LXkXoBuD2PzT9HMzA6qv/9Li7RwS/cUYM63ZojOnzVUAB3Cf9DtK1TsI8S7btdQdQnwbcVryGXeE6OJ6HHAJdWH/09HVv5BwhmUY5f/peamEB+l0Lx3btrp+jwQgoZNKvscceXAvk0PD8S0AdjQ/e5xEPLZeQVgXOxEFpZzguosod6FGEaCgC4MGqI/+j1AOoYpmGOP0Qiuf55JcxK6VqEr4pdeeTCqUe3IoQDXlARBhAdw4CdJA0OFweuC78AgAuke9DtAG5hwL36YmkKGTexa0G0EAKhD/CS/u+Iwy4AgQFAKrSlStdPuQVmGPIPfSq27JQ9nh7ngaApv/E7DamGXpwTkyJ7/EQhF7oFwCQerKaQqOc9bMc15S1GpgAwLuygPXn+wvfYAa5MsSXL6Ff6l5wQKPcLL5Zc2o6I+UKDJFdAZy3qoDZ49FRI/4V4n/6KvrBNQ38+EAapSeHuOiiNLeFt9EAKAHIzFqOwYEZTrLQfJ088Pzoa1rELjo44fY3NytPrlXiboLyBv7nWAC4BRCOL/IKS80mLeUuAPKz5rPAZyW9fOUl4xDWTVF2XgMFmgqrJUA9LlBpCzMyTiyDDV++UR3FQfKFxEsasygIIBlAh1LIGStk/Xl7HscB2gXKbIVr7oFDf1ou8v411emXib8BAkot35l2vcJSC4HNEiBbD+RW+9pZmyzh7ERJhgkAwfDlb3HRSjn9InGXa9OgtgS3EQAoATjk3bQOGOBcih0XhUbq70k0jY8OsgPss8oZ6/ZeZro8te32zyCrBpQGtGthiCxtyNb1YFaT35JgfeDyuyeMgrgC2n1vJa5dFkBdDahiAIsLlPgeZIao1DcHnz3c3rPcThKxt6zwBfE+i3/wP3913aEglx5j1xlATg3YTbWJloefVTr+NGyFH4GETioHUlmGhHWPSRJytrT2m3B5duhBZE8DQ14TW7OQujOKgm6ZBIAkjCK0Wu1fVh3y0cvLavWBKLXZM9oTjMkmExanqiiTWWOCnJ2kHmzlRpCFASjEW5bENvZE+4cG5mTTN73UU0H75r7ZvHSjRoRfN5vN68sbR2E8J1CujfnKl7l4YW6kC7vvjrVK312bI1qQNQuQerktykqhr4GBAwSKACKSCUqQrlYvr5v7fXPfr+xBM1rtN/yG++ZF3kEvo8rj4rbv0ElBoWUydIhKLv1B1NICyKoBEt8WBEnOCFQvUsih+D62g4mvPV/5++fnnZNPe0DiEHzyuzavfbd1hEO+TUx6tFKl1FpaANk0QMpDO0dow81/IMSARkWj87OXfE4XJx4oe1n1TNKAH/NbxY13fisaZTLkXkosspM9HXece4Vf1/KGkI0BDrnbvoEYcHuDCfeDyLjVX73cFfmbFRqEDG6Xd99f9xMSTNB419dQhIU3RNssgCw+AOJWsye2PTAmG4FGtbjW5H9y7h8Uavg12qsPSMQu45QhtOb2LkmZywadphZAlkpQHwPAE0RAqHJl1G3TQY1z5j8eBS1HTgwdYyfhWr1qCDbHimn6d+TIDr2+9BD2Ki1wdgGwE0/64Q+kWdIIEqB4UDPBWt4VAPfX1UgHUDCBEgOOm9CadIwIDMmk1gINdxC1GYByTT/g31BoFh/R7kRXQqUr7TctX1yLwedxM0YVQP1qQCaxLtmur7/tAOxUJWQouQ9FgAgN3WLQwMUfDbFwG+PVpvr4GO7hOnDQKBHVUb41ZAB1GACPWNwxrLx6rZb/c7N6IDrgnkOFwP1tCO+0GZxT22tmKsVlqkHUyQNw+T4tENus7s0FfCBCNMXgvh9CICuaDEAxaYdzkExOW84Qqm3g76308C2qRPoadcvHIAdQg/2V409H+TMuBMCFGvjOUyNdlsQs99sZrURVSw01iAwJUG3MRTY7XK+UOFx7NOZ5lDYsqLKjKwMBzkdj3+snCXKRvOskx/xYWcLfXQ7YyTDIb3uTNDMuOfoJj1bhWv1RGBzZxzsUYiHD4CmGMBAYo0nEpzLCXVWPM0DQSZqXvgyJttc2B2gnCPstGyi9bDH0rCjACYaNHtno9Zf0c9peXl9feSDgEAQqPUbuK7Vmyl0MXTJKl4YwYYG7qn4RJV21oQW8DghQKwzglqJtA6ucS3V9H02/MOHoz1ce29xBlbkNlSCUIwBhM1xI63FTCgYRwKUsW+TMHDjTpwZR0waEQasdVjGA5xn092cC0X7zabo/aH80fJpV/4fuq9U3yAhsRFJAJgRWm7EIpBGTucHgT5cnk/i5cgWaIqAlIOlmwtLvHIH4FPL/we5XfOrvgKIG/Z+c/o8X49+cQKfRvyvf/1gbfwiIuRjsTT2AnG4IBWaFhYpwbwYtUjLQAkA7Ad1qKIr5Y0GdhIGrWG58wtR//G0Nf64XAKU4j5+Nu6Xt4786tmyqAwNI20anIW8wNGWgsgJbeGZoiScgzuJuJnd9S7HRx6bGatXd0tqrTYMi+JFTC75tNi9v3ypp0TxP21q1h/+gmhX1uSkg0coVaAAgesKp6HWwqakUNm+RMOjf8AEmzCT43qUfZMKZDaKIc/z+3vqEILjx2LceIUgcWWHDZRYyQCs7gEwbQG0SILf5cSkIPFtLUoMhmgaANvyhfgmodEFNqo6jV5SOdAdEanAokiEq1msBYNgAq3WNhS0c2sTYUldvDfqP/exbmcM21wixaalWZ0xGWH/XkLBq2FACyMyFYfdQF46N17fLmbaWDxYbvTYpOb7+/944iKooosU2mz1wrPnofQ95g+UqvcoqHkBqJhwyucP+Oe5fRMhtgrgAfGsIQINvh3i3kUa5m2zDV1xki0f6QxFjA3uxI/9HWssAMiQA/XBv1AXxKjxnHlR87O3YtNdNAMYHxWjfgGAjFpy24iuXMoV9ev0l24Mqkew6AGR93EMvP6ElMnZzwMdrDcBxJUzC8bMZFNAxyRSRSn29H4+gBY/HzSu6WOTLuXs5qIt3zsyYIHNbiYAuiB181hvlcASYR8dowPs3eOkPIyX0rb8iQLsmcc/1HveJv6lMSMMhvL+60yP4MJBBpLFkdGkIkfaDqVABae/KnPpSwZ0VqqR5w7l/KJ9j867Qx8eHMZP047V2FI9vo3IMdlMhVB1V6XFUp8O5sY8GnofdfcO2BeIhLo+CZakTQVlcXR/Iuv/WuEMFg823N43sK5pQlu0ERDI9vqs5YKd2YR0uA4X5lI5nACmSkAYBhn6B4qgK9Hik97ZqgiAL5xt5A/8DYFs1JlN23MwRWWaUJUl30o1OCmwVAFIFUAnMozlQum+ZgNpNRKuX1/umsu5HGeZwEg2Y+B2tQOgIEfFq5WCB47GXBcKqkuv73e3uPLaR+1tACaA6FO56Adz2jZ1zZZoA01GBwvCx5dyq6u9/Whnss9kcPzsXtArUxcGmY3Hvc4gZAd0Rqo2FHctF/Bg8fgr906jqCuHKsVPuD4MAjSsFvDX9FJ3iXHX8OrX6XAYMxQhZoP0e2ifaMBgKlC/ZN4ND9u6CGfFFzFuK7ADrTmo6qJhvpwHYqVQB6RoMVlWAaJm5xQ29HBsWXy1s160VrQ8rRO1aH2xf+yNH2VOgAoURkbXoBuFrSb9z6pNT3HUNcZGLzv6tFoGtcoO6SAWy4Aq1sNjYGGgJYUzmpCL9i942HfJfVgNdD6Av2x+7V5COiwhU4kZMbpI720JHOHC+3RBoQpkLyNuRtBh+gCsw3EO/WlmrD6kV2qH9/fVt5W77oSYGqqXgWAuNlHj68tmwtdQVEEFxC/Y7H8R/mi2/UEbLVTx0FQDI3RFcYsK2z2j4xmncM+7HjPvuUjjbuTDd8ULHFMVohw2gOEjbnNYDQChfPxH80AbgEuViJywSALwrPzDqaMukaE2DczqKXfX81hDl431Ez1NzysBHC4K7SCatxsjABwfgQ85RwFIE2tqrzKukCNKOMBjHbnLBwATnzk2BTQkAG7DftALB6cU2+vFSgwhhkSgxmDHhN4d/zYUfpgeo9NihMLay15kznRRBRjaonUsqGy0HWOzQokOlsCOsVCMVdK8bHCbAQNuZAdljsd+McAUITJQC9Q8vHPmF1461MtXiKQD4QwKAbUbAFAGYAImG3eDjvlEal8tP6WMnLKCGIgVjMMoXwsoByMGxSTvbWaDNWSq3mgNAc3QSXhlX/Lo5XnQGR+NUQJP+/axxiS0EWobQ7Ql5apKTvTCfVmmxK9L5wMTv1ISEGVToUSLMoP0bm3zZyIXf92hesb35tJXpDH46swKIwKA+dnAG37HMjZsA2PKBCXSFkixFKY4Lz2kEUMM6r8xFu7/RuScNNBTBZmWC3ZMbzMoyCV1GFhRDrMIhDsC/bmU2JE67PiWkglnwQ9TbnckQky03+w79fQZ/jDJsmr79mDLD4Pfw5RacCQCoohCxpftgf6KnFIpTAJpc+u34Oa6MNVoTNpOr3z7HeMOXgdbCUvH7TgAAWNDv1owwKsU+JOb7cU8yrJXGfrQ30J1u3nxar/v+0c3aSRUPorMCIHY0yIeHKA5igtG4etDnGB013RbYEbh/oxf6kBTgKiumOSAN3DW1ISvuAOC+WmZvFPgDrw4AHCYGhUPJTV92VW4FAKrPsJySWGysj/XtNi8LbQ2jl26RSQucg8d+srK/QJipttLtuwYgfHwHWMM0T6kET4DATLiY18qVE/O93uNutN+7vWkAfs4AwMqfm/2CWyqdLOAAORObOsipp4aqADgj5QmfBlqfwKlOh92ASU19U0wBerUhcHR8SSo62zgE2JU29VR57A90c8ZCrQ8lgaPH7cMKwMuy41TofgoAYsI1+G6scVKhWelVAKxRXRjtLSni2NE7QLt9MAM+yoMesQMA6vZ15JSDKKPDAAih6AEAiy0ihykArBYGwKpp3ACIbY0BdE0WRZTZACBtANzDAEIC/Yd5kUwAYPOx8L5yqwwcV33eLiMpAQhyvwUBVekfiIaGAUhLWWAh4WU8AMdXtPTGeps32C8CcKhLmsRi6qQVgEsDALsIpAe1RSwbF7FXibHF5wo4OMC9UbIAAGgIs3ZYadMBtAWAhcMp7JeGiJgF7hXtBYA+VQv2AADnOZA0+S9i4ksrzql1QA2A1Q/IJPnk4Ll35FGrH7A4AA5J6+GAyPe4EiwYq05obNaGDk0d8LMNgJgTypceztKAIpO7Axd9DQe83a2eoOMLUhyo1nYvskxur/qE1s5YgP+o0JMC06DoGRhjM1DHF7Q0APsJAGAiNVfux0nodIVpA4Bum7Q4KiAgyYlCD3IyKRo8vi49V8+eE3BUx5Qn7Bo1aUSD6558APV8+Zzvh5jlh2nh8GZ5AI7WcNgOQM7g3GNXMRL22FUA6IyQpVFeHp8trQCLUqfPZWPOzeKeoC3odiREKAx7CsdkhEQ0KKfHW1vEaAjSpPYMOZ5pD1WXSgfVABztOUF74IYHWjJ1TnD7H5EeHx+52mTlQeJydNt4C31/WxgA65fs+9PJfWlxT7UKonfVJkpsfcBUd5uVQeE7j/yxWej7C1326GUHmz14lWpjxK6uDJWuTnHV7oTL2A/o+EBt8wX5gM3DckZkZQgA0OXxZHDPNMUJHf9yCysBa9rpYVtbaTwDAGxtkxx3NoSFPY/3/dMl4Phg4ZlW1WGoDV5HpoT6QLAqgc2CATG1egFi+9RDl3b7oDp8PcsNU2Hw+GQ0a8YSCqOLOcPWhNijOpBWLYHbm+4REtvGyaIa6r6UN0xdKdHHvwAXhd40UjVJcf/5O110gTZ7ulRpzM4Aj+dd1fZRumv2CQbp4zLwzOKg+/GPAyDanWDadN0qm8yZHWIN1WQv53wM7AIwQwK0FZSdohPMwEQZAHdwboPMhdqNjNhO+LARUKHv9lwDQG2NguNf0l68XMIZcKTdZwlYZQSuYAWu56pVdMaUXEfx8nFTPUj/DGzNTUOo3jpOZmhBVwtDp01qOrKu9pgZGrasto3d5Kap/6W3Dc6YFO3qk1GNkvSx5acu+o8z+i/1xsGL3jOklEDG5pwC/uF4U64JHz92BL24nvo5gwHCaqJWEwD35vlRuvrl7nrXTXMQGLW3DluOSlp9O346dMuc0htWg1K2ay0ClS8YP/pYSh19EnqUJJ0oBZ091Av6WKUvp+Fu3283vXl6K89imDErnNorF9Wun6k7BtDbqxvRzzkd2FwFxLSxc/TaWx+cILDuF/7cbDpb3mnP+bVo1Ue+9oIfW6xQN8StDQBkQBjMOySv2TF67CQI3FxAm6hw8rvbDRdrwU2qmsD1vRqh8a4yw8Gck1LM4s1xv9l8WiBA1cDV9tCwipFWFtk/Nrqk5+UbieEFtIaoJH4x67A0wxTe32xMvLm/7s1d020pEGMDWlNUYOXvn6vVcaH2m1QMl63m6DTG6JzYjHCgKQT3DUKWbbNiD+Be7Jtt7B6VW+fFvlHbZ16QwV0ixBogkiSoJxA4GLNlkXm4LujHeWkc4zVhg8/L/bMzH0vunIbtw/s9Jxo2zr/t92ruuk3uxe7h2sQcvw2+Ig9r3NqsrBrFb61RWpd63uAMS3A3dtBe0Orl7jKOx+N9s9m8wM7x7p7pevTQ/RXcqHocyX3QBZCHUdomQtVGUNiAc3uYGq0n7y4Ru4mpMVyozV3zTcV2FHbh4+3VidHnN7Hf1HCJx7hA3Jw5qljC4a+2zbbH6dHaR5iBQJtX6YeYrH/sCMHL6oNq1SfuaAB13OhzBqixD3NkhiEsSdonAZfONDltCEufzR2pWiNQNczLmTByhMZdD8hojNAQd3wz7th8UyM0mjnR2ZtQUC0Bt+5ESSEDTjuQlaMqJ6a+3tchgJyQ8vb2ZoxIadtAOURF3oHqETC1WM1NtVOjOcg+VJW6fSEuPOOShkYOc1bHsDaTy9EvE+InUwJqANThEomTyoP/Y6SGNDa8Gimx2tuzBAG0dg+N4T+0OaJwM5f+xkTNW2ewst5DHVEnB4yMlUwEVr2zhJ3pAItZub9+zE4wcl9XxgHVofSofboCcZYHhnWAVQpWs8qD9b7RRTbhxVVjRHe09u0fW2Uny7k4X8wN9PfVY4aVNunfzKefGuPluwCYxwss8FXG3n9dJp6VEp63Cd1QgWJ8zM46Xl+dtJr4rqbIaXTUxwNMCt9NDVnRL4bLzq+x/dR982vLeP16plrgx3QW/+tq0X4zbvl6p21Xo/UXqLOW1QkTPWeM1OHSfJWz0s6tUGATH0nfNouyf2O4/tl6ysy5So/HCzW3fFSHxXxbjWQeavCPwO+hCSx2DaByno2zppoAVJZwqcNEqT4xSJ0yRHu6rhr+UXXc1GaPFmF/IdseaniBlqO2tmrzRLxYf1OV3ReMPPIIPW1D7uJwqoWug+//ElCuewBQhwzk+UIsoI5Pu9cHrU3wJI/Tqwn9GkCGOdub+7A14QxBbjCPltvrUh2ip7RZX1lMHs8lxGazWZJ8IdiHLgN0zhvcXRbWApLtP/Yy0//SN11VhkFiCMtxLPmHsaUcrtqlg7dtHjnZPnJTdk6Hg+OZJ3EArdL9dyUHzgoJ2sszJ+0pA4tcj12p0reYANuZozvtMiTL+AI1F0DWBxKhL7TP99k0TtwcpCpgbFQtJ5SKnXaOne2cOrs2zpxcfPMjx+DtpW9P5aozTLbHWaRiYFQ2CipS6NO3b7eBc4clCyT6oN7Fr35LWB2xNOJBQL+HR7Gh68RR28nTa+fBw4sSPCpL0msrYcpTcJKdiANTu2E4qshy1IkQ99njwhcQ2cP4b3CuuNusw7EfosqZxmSErnQcPG05ff6sDx/3i1+PBYJfcYWe7xViOnAY+0UypAEL5QOdh0+fr4LCUAH8t4QADjtgsTz+2A/8qD9bQJRNo93D5y0A1HrQb506NXRl8eHLBCAqGPO4AcABC+SgbPeVFCoPsu3SbwdA6cHIn9IyA3MmfJJ+EQKQuctZhsVuPqA/JMiVCvdyufe9YwIdAFQscGJstBAgMWbDm9VkNMGsiMMA5P5wOQvjFPguBCK973dnYQA7AKqB/vLLL6JxZ2tjOPacMbZgCOG6sOKyUO2PF2Kaec4z4BJfnQ60tTGAFYBKD9KoKA4j6M9gt7bv/eAsgJ6sCU/8q1LF2mJAini/THCCNcw8MbUhEq1tDGAHoBKC0CsG8oNUCD/QT07RzO6CcTGNV3EZFjua04toiHA4rjRmykhaBcAFwPW3rBTC7iKvPyZIiefLQQtpwJ6vAnBR7euATfBc60QITkR0bXkr9aLYBcAJgPaIIYrsW1U1ZUWcxgfrcHqa5qtW3cuT6mcYRqTEPWdAJgWTpyo5BMAJQKUGUFz4fzrfKoOxzWLIDF+VsmCeoYjTp1jElDVKdwnr1b24+lXjwPUxAJi20Nk0gkAN+TGowJyEsdDINfMFf4Z0qaUPtYNBvea3wMAs55Cj1MsVu2xvdgHoAaBCgEuY0xtIIdFGLwdYhMDTjEhVBmKxaCpNAj8O5YNJK1lFfN9zdbZx/uxXAL0A6PQYeNLO7kGaCKnPAjnL2rAYBz+YW2auHgZHXebqAC157GVDzf10WYw8l1ihtUsA+gGovQGf9J1iSfUEQ+MYJjGWO5xPvvgjLXPQtFgxZPO5NHV8OKmOHty56e8DoBICFDN3ekgn/Q6gB+ofJr433ymocylJNcKD+zztc5+pUwFmzhhoHACVPxSwAY8QRlGxPDH9D/Zgw51GFB+iOJYzMfmPTiBk4O6HrDvzyvYQzPQBoZYkwEgArjdRLhVPK4aSDkluqgDse9ZeI8cBK+2fwuAWJidal4ogIWR+nNLemUZGDoSp4fJOD2AEALpURJVB7VvQiCmXQ+lfy0bcMCFRRJLTAAPQJJKje8Tsmsqy0BIQCE7EZ2SQiTjPCqmlQ/QPAFDlBgyX4uJ0CSKT/zqVFRhT7hcw9r8531FUTswpTVTMAfPzICpjOcivkurcyyHkigftpse03u4xAGMAqEzB5c+C9XaSZ+ZJl3yV2sPo4dxabhm4t+i1D7jPAs87GIc3H7h3+aPEHJT0e0OVYE/OdAoGGk5SHgEpAdz1r/8wADUCcOJIHwLhd1xnLFn7NAZxfnf+gxA4+qTViAZwmbdn2t2lsMWvxlUpAuY87aZe/3ws/cMAQNsEbSFAB4zWQdhA2g5jC/BnKUyobWhUkdkwmYIGKrHA473ctC0SLGEHad/65746IW37+/19NgDKHYDd1UUxKuMDc/haU5lCI2KjJMhaKRvWTKWQXJkwxFVr3mQ7LgZ+lPYmzPn6p8oDvg7RPwoA7Q4ADwAVQ9adO0HtM6r5jww3qenJxYVQDkk9bQKMKFcKp4Qrwc6e/lOE+xPm1QHZMB/hugAAtUsIx23lhyEE4OBbrqkTs8JLmCc364WpzWNLooIZOzWAX2LQFvDfdFLpAQeV/G/XI+gfCUCFQKKzsH0AlIE4kyU41Csd5fK8KxqxiOATamgHFlDu4ReGnwFlPzXEr5xUmsA6Sy7oP18XAqDqoBPfUJChNwoPEgKPqJGWMONWaIWQ20FfTSqtFAaHVBzjVD/2lxxlKSJMMqFHNKlzo+PWfzQAtRRAAvr7YLIH4RhG0vo6cAMOOCkPXR4BVTvNIpHWNLIgFkGZhaDz/WhsUEnLyv8dTf94ACoEhJEfNgZiwH3Va1X6cqA/DfEhaNRb4LB0ROnJmH9NRd5HeDsE8r3BuGJDGuWVtzqa/tEA6MBIfJFfsAFjIH53IpXfAAlTTwUBUVHUbjLou+B7HMRew9cufeUBitrXqK06wk3MptI/HoB6WxFntaIoSjri5OP64Gyu1gpp/kHc62iGQMxXSIVn/JgLhvIWcRCUeEgIRPqjEGkzmQEcTf8UAOrISH7bpBR4yOP5gn0nySEyEwfA63muymqVIaDCl5JNTSOyy3BfWbCcKMO7600AzADAQAAHRRFMqoKcRIyX57nhylJR0yJJkmCc/WqwAPF9/2Oc8Yd0SVyfiwf+/3j6JwKgB69BPpjbs0nF8JQwOajZPAyb1AeZUukraIMWWE8HcVs/rSkh/p9A/zQAamNA1bdO2modJiSO48igjHM6JK6pGDlWy/3lMmUEWQjRFVEFvAnq7yEAoM10p/w4OHeFldP2MtBmA+jB92uXAEVeYDq+IyFIgtxg//NE+icDADwgD6uXjsdYI+2q9SfG+HNkDlUY11cPy5/nlau0u06lfzoA4is0E8AJDK7DR76kUYZ43CfRqYSp4v8oAJoJxLCjkuW+d/iLGgqz2C+KSBuLyeL/MADX2//TfVTyCKI8xn8BBNzRzPPKFqPd7frH9YsAADG4aTGgXAvlLMq+mPywZEVRn6q3fYT9ZwBQiYEs3fGlkAebfRUjpIeg4P4E1t+4+309P0T/wwBAcLTWTADc6DvPdnsK+b55Cipf/v9+e5COhwEQ1qBiggsPfvPc+xIIBPlc+Gkl/X9cb+/XrwdACF0NAY6g6jPBgX3s+lkGue8Hf1a7CXfr6/X2OBFzAJDBQSUHFEfC0U+e0y4rXK8MZM33fqUG9z+o/RYBAJKFWhVQ/X6F63Sb2Yo/iUHVxICwSvyB63ubRcBcAKQcVBBccAn6SR/IsuApG0gc98KfXJ+fgjj519vM958NQEMV0Gqd4Jif5USBZmWseKuKE9Bs7l8KAA0BMiQVFBVgsESYkErqga2MHqRlyF8IgI4gwBlN8M5+EB3wnFPHKOQQBPXxwUjBCfLf35d484UAaECgVVYU8FfPWUySuhQ0pBWMHWA0xGUcSOqJqVbRbqHVXxQAGEcGENSSIM6p+iEYgQXkkLXKglTOF6bqL815q2GWcL4HOSqAicz+kS2Qvxj9CwKg34pjYPB8mh0EIwAlcVQm2SntYwKahhkmJFYf8eISN/ptOe//twWpXxoAMZGrZgO9DTTkIMjlhLYnjgMpfyU4wzjUF8ZZhhNSRjE03IqL/Ygq4jVkYvFv59uSb7wwAIoNflcYVKr8VC+suKAW4AXqEsWR+jceZxWc0roRVVG/Vgj/vQG4qsC0xoAaag0fCF9m0RST+40L8ODMQZIs7KhMxKk/X59A/nMAqF50bYBgDk9G4QlYPjkQQsqSkMMBKiM4tB9piOTaP4P6pwFQg3Be72ppmO4KcOKF0r8+hfjnAtBkBEMl0NoCtmxie2hAvfS3p73jUwEwXv7cBKHRD0+tS/8V1H8BACYInBN2AAPqZ/otsP16fX2a2H85APz6P/VCntcAxBYuBJeoCPFLEA6U35qw/fsAQFN0q0r3t/X697px3f5vfd/5X76Een79GxNEpkZ8oTfRAAAAAElFTkSuQmCC" alt=""><span class="brand-txt">Algarve Dance<small>Academia Salsa Algarve</small></span></div>
+        <p style="margin-top:16px;max-width:38ch"><span data-pt>Aulas de Salsa em Tavira · Ginásio Clube de Tavira · Terças às 18h00.</span><span data-en>Salsa classes in Tavira · Ginásio Clube de Tavira · Tuesdays at 6pm.</span></p>
+        <p style="margin-top:10px"><a href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20salsa%20em%20Tavira.">WhatsApp · 912 544 500</a></p>
+        <p><a href="mailto:geral@salsa-algarve.com">geral@salsa-algarve.com</a></p>
+      </div>
+      <div class="f-links">
+        <a href="https://algarvedance.com/faro/">Faro</a>
+        <a href="https://algarvedance.com"><span data-pt>Todas as cidades</span><span data-en>All towns</span></a>
+        <a href="https://privates.algarvedance.com"><span data-pt>Aulas particulares</span><span data-en>Private lessons</span></a>
+      </div>
+      <div class="f-links">
+        <a href="https://orgulhe.algarvedance.com">Orgulhe Dance Festival</a>
+        <a href="https://marfado.algarvedance.com">Marfado Latin Fest</a>
+        <a href="https://cafe.algarvedance.com">Café Latino</a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© 2026 Academia de Salsa do Algarve · Associação Bluedance</span>
+      <span><span data-pt>Do primeiro passo à pista.</span><span data-en>From the first step to the floor.</span></span>
+    </div>
   </div>
-  <div class="footer-copy">© 2026 Academia de Salsa do Algarve · Associação Bluedance</div>
 </footer>
 
-<!-- ── FLOATING WHATSAPP ── -->
-<a href="https://wa.me/351912544500?text=Olá!%20Quero%20inscrever-me%20nas%20aulas%20de%20Salsa%20em%20Tavira." class="wa-float" target="_blank">
-  <span class="wi">💬</span>
-  <span class="wt pt">Inscrever no WhatsApp</span>
-  <span class="wt en">WhatsApp us</span>
+<a class="wa" href="https://wa.me/351912544500?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20salsa%20em%20Tavira." data-tip="WhatsApp" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.41 4.4-9.81 9.82-9.81 2.62 0 5.08 1.02 6.94 2.88a9.75 9.75 0 0 1 2.87 6.94c0 5.41-4.4 9.82-9.81 9.82zM20.52 3.45A11.7 11.7 0 0 0 12.05 0C5.6 0 .36 5.24.36 11.68c0 2.06.54 4.07 1.56 5.84L.26 24l6.63-1.74a11.66 11.66 0 0 0 5.16 1.24h.01c6.44 0 11.69-5.24 11.69-11.68 0-3.12-1.22-6.06-3.43-8.27z"/></svg>
 </a>
 
-<script>
-/* ── LANG ── */
-function setLang(l) {
-  document.body.setAttribute('data-lang', l);
-  document.getElementById('btnPT').classList.toggle('active', l==='pt');
-  document.getElementById('btnEN').classList.toggle('active', l==='en');
-  document.documentElement.lang = l;
-}
+<script>(function(){
+  var html = document.documentElement;
 
-/* ── SCROLL REVEAL ── */
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  /* ---- idioma ---- */
+  var saved=null;
+  try{ saved = window.localStorage && localStorage.getItem('adlang'); }catch(e){}
+  function set(l){
+    html.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l);});
+    try{ localStorage.setItem('adlang',l); }catch(e){}
+    var t=document.querySelector('title');
+    if(t&&t.dataset[l]) t.textContent=t.dataset[l];
+    document.querySelectorAll('option[data-pt-opt]').forEach(function(o){
+      o.textContent = (l==='en' ? o.dataset.enOpt : o.dataset.ptOpt);
+    });
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ set(b.dataset.l); });
+  });
+  set(saved||(navigator.language&&navigator.language.slice(0,2)==='en'?'en':'pt'));
 
-/* ── NAVBAR SCROLL ── */
-window.addEventListener('scroll', () => {
-  document.querySelector('.lang-bar').style.boxShadow =
-    window.scrollY > 10 ? '0 2px 20px rgba(0,0,0,0.4)' : 'none';
-});
-</script>
+  /* ---- formulario -> WhatsApp ---- */
+  var NUM = '351912544500';
+  var btn = document.getElementById('f-send');
+  if(btn) btn.addEventListener('click', function(){
+    var nome  = (document.getElementById('f-nome').value||'').trim();
+    var tel   = (document.getElementById('f-tel').value||'').trim();
+    var nivel = document.getElementById('f-nivel').value||'';
+    var inter = document.getElementById('f-int').value||'';
+    var msg   = (document.getElementById('f-msg').value||'').trim();
+    var err   = document.getElementById('f-err');
+    if(!nome || !tel){ if(err) err.hidden=false; return; }
+    if(err) err.hidden=true;
+
+    var en = html.lang==='en';
+    var L = [];
+    L.push(en ? 'Hi! I want to sign up for the salsa classes in Tavira.'
+              : 'Ol\u00e1! Quero inscrever-me nas aulas de salsa em Tavira.');
+    L.push('');
+    L.push((en?'Name: ':'Nome: ')+nome);
+    L.push((en?'Phone: ':'Telefone: ')+tel);
+    if(nivel) L.push((en?'Level: ':'N\u00edvel: ')+nivel);
+    if(inter) L.push((en?'Interested in: ':'Interesse: ')+inter);
+    if(msg)   L.push((en?'Message: ':'Mensagem: ')+msg);
+
+    if(window.fbq) fbq('track','Lead',{
+      content_name:'tavira-formulario', content_category:'formulario',
+      content_type: inter||'indefinido', source_url: location.href
+    });
+
+    window.open('https://wa.me/'+NUM+'?text='+encodeURIComponent(L.join('\n')), '_blank');
+  });
+
+  /* ---- reveal ---- */
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay=(Math.min(i%4,3)*0.07)+'s'; io.observe(el);
+  });
+})();</script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"DanceSchool",
+  "name":"Academia de Salsa do Algarve \u00b7 Tavira",
+  "alternateName":"Algarve Dance Tavira",
+  "url":"https://algarvedance.com/tavira/",
+  "telephone":"+351912544500",
+  "email":"geral@salsa-algarve.com",
+  "address":{"@type":"PostalAddress","streetAddress":"Gin\u00e1sio Clube de Tavira","addressLocality":"Tavira","addressRegion":"Algarve","addressCountry":"PT"},
+  "areaServed":"Tavira",
+  "openingHours":"Tu 18:00-19:00"
+}</script>
 </body>
 </html>
