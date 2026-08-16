@@ -322,6 +322,15 @@ html[lang="en"] [data-en]{display:revert}
 @media(max-width:640px){.g4,.days,.mini{grid-template-columns:1fr}}
 
 
+/* ---------- foto da turma ---------- */
+.photo{margin:0;position:relative}
+.photo img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.photo figcaption{
+ margin-top:14px;font-family:'Lora',Georgia,serif;font-style:italic;
+ font-size:clamp(16px,2vw,20px);color:var(--gold-light);line-height:1.5;max-width:60ch;
+}
+.photo .cap-sub{display:block;font-family:'DM Sans',sans-serif;font-style:normal;font-size:13px;
+ letter-spacing:.12em;text-transform:uppercase;color:var(--secondary);margin-top:8px}
 /* ---------- formulario ---------- */
 .form-card{border:1px solid var(--line);background:linear-gradient(160deg,var(--card),var(--surface));padding:clamp(26px,3.6vw,46px);position:relative}
 .form-card::before{content:'';position:absolute;top:-1px;left:-1px;width:44px;height:44px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
@@ -460,6 +469,64 @@ html[lang="en"] .tier.now::before{content:'MOST CHOSEN'}
       </article>
     </div>
     <p class="note rv"><b><span data-pt>Aulas num bar.</span><span data-en>Classes in a bar.</span></b> <span data-pt>Não há espelhos nem chão de ginásio — há a música alta, o balcão ali ao lado e gente que passa e fica a ver. É mais parecido com dançar a sério do que qualquer sala de aula.</span><span data-en>No mirrors, no gym floor — there's loud music, the bar right there, and people who walk past and stop to watch. It's much closer to real dancing than any classroom.</span></p>
+  </div>
+</section>
+
+<!-- ============ A TURMA ============ -->
+<section id="turma" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Quem já cá anda</span><span data-en>Who's already here</span></span>
+      <h2><span data-pt>Foi assim que</span><span data-en>This is how</span> <em><span data-pt>toda a gente começou</span><span data-en>everyone started</span></em></h2>
+    </div>
+    <figure class="photo rv">
+      <img src="img/turma-armacao-de-pera.jpg"
+           srcset="img/turma-armacao-de-pera-900.jpg 900w, img/turma-armacao-de-pera.jpg 1600w"
+           sizes="(max-width:900px) 100vw, 1100px"
+           width="1600" height="1200" loading="lazy" decoding="async"
+           alt="Turma de Kizomba, Bachata e Salsa da Academia de Salsa do Algarve em Armação de Pêra, no Lost Cocktail Bar">
+      <figcaption>
+        <span data-pt>Pessoas de todas as idades, que um dia entraram por aquela porta sem saber dançar e sem conhecer ninguém.</span>
+        <span data-en>People of all ages, who one day walked through that door not knowing how to dance and not knowing anyone.</span>
+        <span class="cap-sub"><span data-pt>Armação de Pêra · Lost Cocktail Bar</span><span data-en>Armação de Pêra · Lost Cocktail Bar</span></span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CRÍTICAS ============ -->
+<section id="criticas">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span data-pt>Críticas no Google</span><span data-en>Google reviews</span></span>
+      <h2><span data-pt>5,0 estrelas em</span><span data-en>5.0 stars across</span> <em><span data-pt>107 críticas</span><span data-en>107 reviews</span></em></h2>
+      <p class="lede"><span data-pt>Não somos nós a dizer. São as pessoas que já cá andam.</span><span data-en>Don't take our word for it. These are the people already here.</span></p>
+    </div>
+
+    <div class="revs">
+      <article class="rev rv">
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote><span data-pt>A melhor academia do mundo e arredores. Tomei a decisão de começar a aprender a dançar e esta foi a academia escolhida.</span><span data-en>The best dance school in the world and surrounding areas. I decided to start learning to dance and this was the school I chose.</span></blockquote>
+        <div class="who"><b>Luís Luz</b><span data-pt>Guia local do Google · 126 críticas</span><span data-en>Google Local Guide · 126 reviews</span></div>
+      </article>
+
+      <article class="rev rv">
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote><span data-pt>Promove workshops e aulas com uma didática incrível e faz com que a dança seja algo divertido e natural, super recomendo.</span><span data-en>Runs workshops and classes with incredible teaching, and makes dancing feel fun and natural. I highly recommend it.</span></blockquote>
+        <div class="who"><b>Washington Coutinho</b><span data-pt>Guia local do Google · 14 críticas</span><span data-en>Google Local Guide · 14 reviews</span></div>
+      </article>
+
+      <article class="rev rv">
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote><span data-pt>Professores maravilhosos. Atenção e muito carinho recebi, além da dança. Com certeza irei continuar.</span><span data-en>Wonderful teachers. I was given attention and a lot of warmth, on top of the dancing. I'll definitely carry on.</span></blockquote>
+        <div class="who"><b>Marcia Trigueiro</b><span data-pt>Há duas semanas</span><span data-en>Two weeks ago</span></div>
+      </article>
+    </div>
+
+    <a class="g-badge rv" href="https://maps.google.com/?cid=11541336284674438629" target="_blank" rel="noopener">
+      <b>5,0</b>
+      <span><span data-pt>★★★★★ · 107 críticas no Google</span><span data-en>★★★★★ · 107 Google reviews</span></span>
+    </a>
   </div>
 </section>
 
@@ -768,7 +835,11 @@ html[lang="en"] .tier.now::before{content:'MOST CHOSEN'}
   "email":"geral@salsa-algarve.com",
   "address":{"@type":"PostalAddress","streetAddress":"Lost Cocktail Bar","addressLocality":"Arma\u00e7\u00e3o de P\u00eara","addressRegion":"Algarve","addressCountry":"PT"},
   "areaServed":"Arma\u00e7\u00e3o de P\u00eara",
-  "openingHours":"Mo 20:00-22:15"
+  "image":"https://algarvedance.com/armacao-de-pera/img/turma-armacao-de-pera.jpg",
+  "openingHours":"Mo 19:30-21:45",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"107","bestRating":"5"},
+  "sameAs":["https://maps.google.com/?cid=11541336284674438629"],
+  "priceRange":"20-50 EUR"
 }</script>
 </body>
 </html>
